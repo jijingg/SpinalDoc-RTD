@@ -18,7 +18,7 @@ The syntax to declare an integer is as follows:  (everything between [] is optio
 
 .. list-table::
    :header-rows: 1
-   :widths: 2 5 1
+   :widths: 5 10 2
 
    * - Syntax
      - Description
@@ -34,7 +34,9 @@ The syntax to declare an integer is as follows:  (everything between [] is optio
      - | UInt
        | SInt
    * - | U(value: Int[,x bits])
+       | U(value: BigInt[,x bits])
        | S(value: Int[,x bits])
+       | S(value: BigInt[,x bits])
      - Create an unsigned/signed integer assigned with 'value'
      - | UInt
        | SInt
@@ -49,7 +51,6 @@ The syntax to declare an integer is as follows:  (everything between [] is optio
      - | UInt
        | SInt
 
-
 .. code-block:: scala
 
    val myUInt = UInt(8 bits)
@@ -62,21 +63,21 @@ The syntax to declare an integer is as follows:  (everything between [] is optio
                            //               o (base 8)
                            //               b (base 2)                       
    myUInt := U"8'h1A"       
-   myUInt := 2             // You can use scala Int as literal value
+   myUInt := 2             // You can use a Scala Int as a literal value
 
    val myBool := myUInt === U(7 -> true,(6 downto 0) -> false)
    val myBool := myUInt === U(myUInt.range -> true)
 
-   // For assignement purposes, you can omit the U/S, which also alow the use of the [default -> ???] feature
-   myUInt := (default -> true)                        //Assign myUInt with "11111111"
-   myUInt := (myUInt.range -> true)                   //Assign myUInt with "11111111"
-   myUInt := (7 -> true, default -> false)            //Assign myUInt with "10000000"
-   myUInt := ((4 downto 1) -> true, default -> false) //Assign myUInt with "00011110"
+   // For assignment purposes, you can omit the U/S, which also allows the use of the [default -> ???] feature
+   myUInt := (default -> true)                        // Assign myUInt with "11111111"
+   myUInt := (myUInt.range -> true)                   // Assign myUInt with "11111111"
+   myUInt := (7 -> true, default -> false)            // Assign myUInt with "10000000"
+   myUInt := ((4 downto 1) -> true, default -> false) // Assign myUInt with "00011110"
 
 Operators
 ^^^^^^^^^
 
-The following operators are available for the ``UInt`` and ``SInt`` type
+The following operators are available for the ``UInt`` and ``SInt`` types:
 
 Logic
 ~~~~~
@@ -149,25 +150,24 @@ Logic
      - Set all bits to the given Bool value
      - 
 
-
 .. code-block:: scala
 
    // Bitwise operator
    val a, b, c = SInt(32 bits)
-   c := ~(a & b) //  Inverse(a AND b)
+   c := ~(a & b) // Inverse(a AND b)
 
-   val all_1 = a.andR // Check that all bit are equal to 1
+   val all_1 = a.andR // Check that all bits are equal to 1
 
    // Logical shift
-   val uint_10bits = uint_8bits << 2  // shift left (result on 10 bits)
-   val shift_8bits = uint_8bits |<< 2 // shift left (result on 8 bits)
+   val uint_10bits = uint_8bits << 2  // shift left (resulting in 10 bits)
+   val shift_8bits = uint_8bits |<< 2 // shift left (resulting in 8 bits)
 
    // Logical rotation
    val myBits = uint_8bits.rotateLeft(3) // left bit rotation
 
    // Set/clear
    val a = B"8'x42"
-   when(cond){
+   when(cond) {
      a.setAll() // set all bits to True when cond is True
    }
 
@@ -182,20 +182,31 @@ Arithmetic
      - Return
    * - x + y
      - Addition
-     - T(max(w(x), w(y) bits)
+     - T(max(w(x), w(y)), bits)
+   * - x +^ y
+     - Addition with carry
+     - T(max(w(x), w(y) + 1), bits)
+   * - x +| y
+     - Addition by sat carry bit
+     - T(max(w(x), w(y)), bits)
    * - x - y
      - Subtraction
-     - T(max(w(x), w(y) bits)
+     - T(max(w(x), w(y)), bits)
+   * - x -^ y
+     - Subtraction with carry
+     - T(max(w(x), w(y) + 1), bits)
+   * - x -| y
+     - Subtraction by sat carry bit
+     - T(max(w(x), w(y)), bits)
    * - x * y
      - Multiplication
-     - T(w(x) + w(y) bits)
+     - T(w(x) + w(y)), bits)
    * - x / y
      - Division
-     - T(w(x) bits)
+     - T(w(x), bits)
    * - x % y
      - Modulo
-     - T(w(x) bits)
-
+     - T(w(x), bits)
 
 .. code-block:: scala
 
@@ -230,17 +241,16 @@ Comparison
      - Less than or equal
      - Bool
 
-
 .. code-block:: scala
 
-   // Comparaison between two SInt
+   // Comparison between two SInts
    myBool := mySInt_1 > mySInt_2
 
-   // Comparaison between UInt and a literal
+   // Comparison between a UInt and a literal
    myBool := myUInt_8bits >= U(3, 8 bits)
 
-   when(myUInt_8bits === 3){
-
+   when(myUInt_8bits === 3) {
+     ..
    }
 
 Type cast
@@ -253,33 +263,35 @@ Type cast
      - Description
      - Return
    * - x.asBits
-     - Binary cast in Bits
-     - Bits(w(x) bits)
+     - Binary cast to Bits
+     - Bits(w(x), bits)
    * - x.asUInt
-     - Binary cast in UInt
-     - UInt(w(x) bits)
+     - Binary cast to UInt
+     - UInt(w(x), bits)
    * - x.asSInt
-     - Binary cast in SInt
-     - SInt(w(x) bits)
+     - Binary cast to SInt
+     - SInt(w(x), bits)
    * - x.asBools
      - Cast into a array of Bool
      - Vec(Bool, w(x))
    * - S(x: T)
      - Cast a Data into a SInt
-     - SInt(w(x) bits)
+     - SInt(w(x), bits)
    * - U(x: T)
      - Cast a Data into an UInt
-     - UInt(w(x) bits)
+     - UInt(w(x), bits)
+   * - x.intoSInt
+     - convert to SInt expand signbit
+     - SInt(w(x) + 1, bits)
 
-
-To cast a Bool, a Bits or a SInt into a UInt, you can use ``U(something)``. To cast things into a SInt, you can use ``S(something)``
+To cast a ``Bool``, a ``Bits``, or an ``SInt`` into a ``UInt``, you can use ``U(something)``. To cast things into an ``SInt``, you can use ``S(something)``.
 
 .. code-block:: scala
 
-   // cast a SInt to Bits
+   // Cast an SInt to Bits
    val myBits = mySInt.asBits
 
-   // create a Vector of bool
+   // Create a Vector of Bool
    val myVec = myUInt.asBools
 
    // Cast a Bits to SInt
@@ -302,7 +314,7 @@ Bit extraction
      - Read bitfield, offset: UInt, width: Int
      - T(width bits)
    * - x(\ :ref:`range <range>`\ )
-     - Read a range of bit. Ex : myBits(4 downto 2)
+     - Read a range of bits. Ex : myBits(4 downto 2)
      - T(range bits)
    * - x(y) := z
      - Assign bits, y : Int/UInt
@@ -314,13 +326,12 @@ Bit extraction
      - Assign a range of bit. Ex : myBits(4 downto 2) := U"010"
      - T(range bits)
 
-
 .. code-block:: scala
 
-   // get the element at the index 4
+   // get the bit at index 4
    val myBool = myUInt(4)
 
-   // assign
+   // assign bit 1 to True
    mySInt(1) := True
 
    // Range
@@ -362,10 +373,10 @@ Misc
      - Concatenate x:T with y:Bool/SInt/UInt
      - T(w(x) + w(y) bits)
    * - x.subdivideIn(y slices)
-     - Subdivide x in y slices, y: Int
+     - Subdivide x into y slices, y: Int
      - Vec(T,  y)
    * - x.subdivideIn(y bits)
-     - Subdivide x in multiple slices of y bits, y: Int
+     - Subdivide x into multiple slices of y bits, y: Int
      - Vec(T, w(x)/y)
    * - x.resize(y)
      - | Return a resized copy of x, if enlarged, it is filled with zero
@@ -373,17 +384,26 @@ Misc
      - T(y bits)
    * - x.resized
      - | Return a version of x which is allowed to be automatically 
-       | resized were needed
+       | resized where needed
      - T(w(x) bits)
    * - myUInt.twoComplement(en: Bool)
      - Use the two's complement to transform an UInt into an SInt
-     - SInt(w(myUInt) + 1)
+     - SInt(w(myUInt) + 1, bits)
    * - mySInt.abs
-     - Return the absolute value of the SInt value
-     - SInt(w(mySInt))
+     - Return the absolute value of the UInt value
+     - UInt(w(mySInt), bits)
    * - mySInt.abs(en: Bool)
-     - Return the absolute value of the SInt value when en is True
-     - SInt(w(mySInt))
+     - Return the absolute value of the UInt value when en is True
+     - UInt(w(mySInt), bits)
+   * - mySInt.sign
+     - Return most significant bit
+     - Bool
+   * - x.expand
+     - Return x with 1 bit expand
+     - T(w(x)+1 bit)
+   * - mySInt.absWithSym
+     - Return the absolute value of the UInt value with symmetric, shrink 1 bit
+     - UInt(w(mySInt) - 1, bits)
 
 
 .. code-block:: scala
@@ -402,7 +422,7 @@ Misc
        // sel = 2 => mySIntWord = mySInt_128bits( 63 downto 32)
        // sel = 3 => mySIntWord = mySInt_128bits( 31 downto  0)
 
-    // if you want to access in a reverse order you can do
+    // If you want to access in reverse order you can do:
     val myVector   = mySInt_128bits.subdivideIn(32 bits).reverse
     val mySIntWord = myVector(sel)
 
@@ -416,3 +436,148 @@ Misc
 
    // Absolute value
    mySInt_abs := mySInt.abs
+
+
+FixPoint operations
+^^^^^^^^^^^^^^^^^^^
+
+For fixpoint, we can divide it into two parts:
+
+ - Lower bit operations (rounding methods)
+ - High bit operations (saturation operations)
+
+Lower bit operations
+~~~~~~~~~~~~~~~~~~~~
+
+.. image:: /asset/image/fixpoint/lowerBitOperation.png
+
+About Rounding: https://en.wikipedia.org/wiki/Rounding
+
+================ ================= ============= ======================== ====================== ===========
+ SpinalHDL-Name   Wikipedia-Name    API           Mathematic Algorithm     return(align=false)    Supported
+================ ================= ============= ======================== ====================== ===========
+ FLOOR            RoundDown         floor         floor(x)                  w(x)-n   bits         Yes
+ FLOORTOZERO      RoundToZero       floorToZero   sign*floor(abs(x))        w(x)-n   bits         Yes
+ CEIL             RoundUp           ceil          ceil(x)                   w(x)-n+1 bits         Yes
+ CEILTOINF        RoundToInf        ceilToInf     sign*ceil(abs(x))         w(x)-n+1 bits         Yes
+ ROUNDUP          RoundHalfUp       roundUp       floor(x+0.5)              w(x)-n+1 bits         Yes
+ ROUNDDOWN        RoundHalfDown     roundDown     ceil(x-0.5)               w(x)-n+1 bits         Yes
+ ROUNDTOZERO      RoundHalfToZero   roundToZero   sign*ceil(abs(x)-0.5)     w(x)-n+1 bits         Yes
+ ROUNDTOINF       RoundHalfToInf    roundToInf    sign*floor(abs(x)+0.5)    w(x)-n+1 bits         Yes
+ ROUNDTOEVEN      RoundHalfToEven   roundToEven                                                   No
+ ROUNDTOODD       RoundHalfToOdd    roundToOdd                                                    No
+================ ================= ============= ======================== ====================== ===========
+
+.. note::
+   The **RoundToEven** and **RoundToOdd** modes are very special, and are used in some big data statistical fields with high accuracy concerns, SpinalHDL doesn't support them yet.
+
+You will find `ROUNDUP`, `ROUNDDOWN`, `ROUNDTOZERO`, `ROUNDTOINF`, `ROUNDTOEVEN`, `ROUNTOODD` are very close in behavior, `ROUNDTOINF` is the most common. The behavior of rounding in different programming languages may be different.
+
+====================== =================== ========================================================= ====================
+ Programming language  default-RoundType   Example                                                   comments
+====================== =================== ========================================================= ====================
+ Matlab                 ROUNDTOINF          round(1.5)=2,round(2.5)=3;round(-1.5)=-2,round(-2.5)=-3   round to ±Infinity
+ python2                ROUNDTOINF          round(1.5)=2,round(2.5)=3;round(-1.5)=-2,round(-2.5)=-3   round to ±Infinity
+ python3                ROUNDTOEVEN         round(1.5)=round(2.5)=2;  round(-1.5)=round(-2.5)=-2      close to Even
+ Scala.math             ROUNDTOUP           round(1.5)=2,round(2.5)=3;round(-1.5)=-1,round(-2.5)=-2   always to +Infinity
+ SpinalHDL              ROUNDTOINF          round(1.5)=2,round(2.5)=3;round(-1.5)=-2,round(-2.5)=-3   round to ±Infinity
+====================== =================== ========================================================= ====================
+
+.. note::
+   In SpinalHDL `ROUNDTOINF` is the default RoundType (``round = roundToInf``)
+
+.. code-block:: scala
+
+   val A  = SInt(16 bit)
+   val B  = A.roundToInf(6 bits) // default 'align = false' with carry, got 11 bit
+   val B  = A.roundToInf(6 bits, align = true) // sat 1 carry bit, got 10 bit
+   val B  = A.floor(6 bits)             // return 10 bit
+   val B  = A.floorToZero(6 bits)       // return 10 bit
+   val B  = A.ceil(6 bits)              // ceil with carry so return 11 bit
+   val B  = A.ceil(6 bits, align = true) // ceil with carry then sat 1 bit return 10 bit
+   val B  = A.ceilToInf(6 bits)
+   val B  = A.roundUp(6 bits)
+   val B  = A.roundDown(6 bits)
+   val B  = A.roundToInf(6 bits)
+   val B  = A.roundToZero(6 bits)
+   val B  = A.round(6 bits)             // SpinalHDL uses roundToInf as the default rounding mode
+
+   val B0 = A.roundToInf(6 bits, align = true)         //  ---+
+                                                     //     |--> equal
+   val B1 = A.roundToInf(6 bits, align = false).sat(1) //  ---+
+
+.. note::
+   Only ``floor`` and ``floorToZero`` work without the ``align`` option; they do not need a carry bit. Other rounding operations default to using a carry bit.
+
+**round Api**
+
+============= =========== ============================ ===================== ====================
+ API           UInt/SInt   description                  Return(align=false)   Return(align=true)
+============= =========== ============================ ===================== ====================
+ floor         Both                                     w(x)-n   bits         w(x)-n bits
+ floorToZero   SInt        equal to floor in UInt       w(x)-n   bits         w(x)-n bits
+ ceil          Both                                     w(x)-n+1 bits         w(x)-n bits
+ ceilToInf     SInt        equal to ceil in UInt        w(x)-n+1 bits         w(x)-n bits
+ roundUp       Both        simple for HW                w(x)-n+1 bits         w(x)-n bits
+ roundDown     Both                                     w(x)-n+1 bits         w(x)-n bits
+ roundToInf    SInt        most Common                  w(x)-n+1 bits         w(x)-n bits
+ roundToZero   SInt        equal to roundDown in UInt   w(x)-n+1 bits         w(x)-n bits
+ round         Both        SpinalHDL chose roundToInf   w(x)-n+1 bits         w(x)-n bits
+============= =========== ============================ ===================== ====================
+
+.. note::
+   Although ``roundToInf`` is very common, ``roundUp`` has the least cost and good timing, with almost no performance loss.
+   As a result, ``roundUp`` is strongly recommended for production use.
+
+High bit operations
+~~~~~~~~~~~~~~~~~~~
+
+.. image:: /asset/image/fixpoint/highBitOperation.png
+
+========== ============ ====================================== =======================================
+ function   Operation    Positive-Op                            Negative-Op                           
+========== ============ ====================================== =======================================
+ sat        Saturation   when(Top[w-1, w-n].orR) set maxValue   When(Top[w-1, w-n].andR) set minValue 
+ trim       Discard      N/A                                    N/A                                  
+ symmetry   Symmetric    N/A                                    minValue = -maxValue                 
+========== ============ ====================================== =======================================
+
+Symmetric is only valid for ``SInt``.
+
+.. code-block:: scala
+
+   val A  = SInt(8 bit)
+   val B  = A.sat(3 bits)      // return 5 bits with saturated highest 3 bits
+   val B  = A.sat(3)           // equal to sat(3 bits)
+   val B  = A.trim(3 bits)     // return 5 bits with the highest 3 bits discarded
+   val B  = A.trim(3 bits)     // return 5 bits with the highest 3 bits discarded
+   val C  = A.symmetry         // return 8 bits and symmetry as (-128~127 to -127~127)
+   val C  = A.sat(3).symmetry  // return 5 bits and symmetry as (-16~15 to -15~15)
+
+fixTo function
+~~~~~~~~~~~~~~
+
+Two ways are provided in ``UInt``/``SInt`` to do fixpoint:
+
+.. image:: /asset/image/fixpoint/fixPoint.png
+
+``fixTo`` is strongly recommended in your RTL work, you don't need to handle carry bit alignment and bit width calculations manually like **Way1** in the above diagram.
+
+Factory Fix function with Auto Saturation:
+
+===================================== ===================== ===================
+ Function                              Description           Return
+===================================== ===================== ===================
+ fixTo(section, roundType, symmetric)  Factory FixFunction   section.size bits
+===================================== ===================== ===================
+
+.. code-block:: scala
+
+   val A  = SInt(16 bit)
+   val B  = A.fixTo(10 downto 3) // default RoundType.ROUNDTOINF, sym = false
+   val B  = A.fixTo( 8 downto 0, RoundType.ROUNDUP)
+   val B  = A.fixTo( 9 downto 3, RoundType.CEIL,       sym = false)
+   val B  = A.fixTo(16 downto 1, RoundType.ROUNDTOINF, sym = true )
+   val B  = A.fixTo(10 downto 3, RoundType.FLOOR) // floor 3 bit, sat 5 bit @ highest
+   val B  = A.fixTo(20 downto 3, RoundType.FLOOR) // floor 3 bit, expand 2 bit @ highest
+
