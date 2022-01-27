@@ -1080,7 +1080,7 @@
 </ul>
 <div class="section" id="automatic-allocation">
 <h2>Automatic allocation<a class="headerlink" href="#automatic-allocation" title="Permalink to this headline">¶</a></h2>
-<p>Automatic address allocate</p>
+<p>Automatic address allocation</p>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">RegBankExample</span> <span class="k">extends</span> <span class="nc">Component</span><span class="p">{</span>
   <span class="kd">val</span> <span class="n">io</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Bundle</span><span class="p">{</span>
     <span class="n">apb</span> <span class="o">=</span> <span class="nc">Apb3</span><span class="p">(</span><span class="nc">Apb3Config</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">32</span><span class="p">))</span>
@@ -1100,7 +1100,7 @@
 </pre></div>
 </div>
 <img alt="../../_images/reg-auto-allocate.gif" src="../../_images/reg-auto-allocate.gif" />
-<p>Automatic fileds allocate</p>
+<p>Automatic fileds allocation</p>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span> <span class="nc">M_REG0</span>  <span class="o">=</span> <span class="n">busif</span><span class="p">.</span><span class="n">newReg</span><span class="p">(</span><span class="n">doc</span><span class="o">=</span><span class="s">&quot;REG1&quot;</span><span class="p">)</span>
 <span class="kd">val</span> <span class="n">fd0</span> <span class="o">=</span> <span class="nc">M_REG0</span><span class="p">.</span><span class="n">field</span><span class="p">(</span><span class="mi">2</span> <span class="n">bits</span><span class="p">,</span> <span class="nc">RW</span><span class="p">,</span> <span class="n">doc</span><span class="o">=</span> <span class="s">&quot;fields 0&quot;</span><span class="p">)</span>
 <span class="nc">M_REG0</span><span class="p">.</span><span class="n">reserved</span><span class="p">(</span><span class="mi">5</span> <span class="n">bits</span><span class="p">)</span>

@@ -10,7 +10,7 @@ Register Interface Builder
 Automatic allocation
 --------------------
 
-Automatic address allocate
+Automatic address allocation
 
 .. code:: scala
 
@@ -33,7 +33,7 @@ Automatic address allocate
 
 .. image:: /asset/image/regif/reg-auto-allocate.gif
 
-Automatic fileds allocate
+Automatic fileds allocation
 
 .. code:: scala
 
