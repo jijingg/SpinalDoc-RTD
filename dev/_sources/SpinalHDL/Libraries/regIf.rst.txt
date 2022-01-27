@@ -63,8 +63,8 @@ confilict detection
     ...
   cause Exception
 
-28 Access Type
---------------
+28 Access Types
+---------------
   
 Most of these come from UVM
 
