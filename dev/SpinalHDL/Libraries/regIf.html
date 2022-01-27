@@ -671,7 +671,7 @@
 <li class="toctree-l2 current"><a class="current reference internal" href="#">RegIf</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#automatic-allocation">Automatic allocation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#access-types">28 Access Types</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#auto-generate-document">Auto generate document</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#automatic-documentation-generation">Automatic documentation generation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#interrupt-factory">Interrupt Factory</a></li>
 </ul>
 </li>
@@ -1128,7 +1128,7 @@
 </div>
 <div class="section" id="access-types">
 <h2>28 Access Types<a class="headerlink" href="#access-types" title="Permalink to this headline">¶</a></h2>
-<p>Most of these come from UVM</p>
+<p>Most of these come from UVM specification</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 11%" />
@@ -1257,8 +1257,8 @@
 </tbody>
 </table>
 </div>
-<div class="section" id="auto-generate-document">
-<h2>Auto generate document<a class="headerlink" href="#auto-generate-document" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="automatic-documentation-generation">
+<h2>Automatic documentation generation<a class="headerlink" href="#automatic-documentation-generation" title="Permalink to this headline">¶</a></h2>
 <p>Document Type</p>
 <table class="docutils align-default">
 <colgroup>
@@ -1359,7 +1359,7 @@
 </div>
 <div class="section" id="developers-area">
 <h1>Developers Area<a class="headerlink" href="#developers-area" title="Permalink to this headline">¶</a></h1>
-<p>You Extend document Type based on Trait BusIfVistor</p>
+<p>You can add your document Type by extending the <cite>BusIfVistor</cite> Trait</p>
 <p><code class="docutils literal notranslate"><span class="pre">case</span> <span class="pre">class</span> <span class="pre">Latex(fileName</span> <span class="pre">:</span> <span class="pre">String)</span> <span class="pre">extends</span> <span class="pre">BusIfVisitor{</span> <span class="pre">...</span> <span class="pre">}</span></code></p>
 <p>BusIfVistor give access BusIf.RegInsts to do what you want</p>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="c1">// lib/src/main/scala/lib/bus/regif/BusIfVistor.scala</span>
