@@ -1,14 +1,14 @@
  
 RegIf
-============
+=====
 Register Interface Builder
 
 - Automatic address and fields allocate, and conflict detection
 - 28 Register Access types(Covering 25 types of UVM)
 - Auto Document generate
 
-Automatic allocate
-------------------
+Automatic allocation
+--------------------
 
 Automatic address allocate
 
