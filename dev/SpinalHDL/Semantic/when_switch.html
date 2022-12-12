@@ -35,7 +35,9 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/skins/default.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/wavedrom.min.js"></script>
     
@@ -91,46 +93,68 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../About%20SpinalHDL/index.html">About SpinalHDL</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../About%20SpinalHDL/faq.html">FAQ</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../About%20SpinalHDL/faq.html#what-is-the-overhead-of-spinalhdl-generated-rtl-compared-to-human-written-vhdl-verilog">What is the overhead of SpinalHDL generated RTL compared to human written VHDL/Verilog?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../About%20SpinalHDL/faq.html#what-if-spinalhdl-becomes-unsupported-in-the-future">What if SpinalHDL becomes unsupported in the future?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../About%20SpinalHDL/faq.html#does-spinalhdl-keep-comments-in-generated-vhdl-verilog">Does SpinalHDL keep comments in generated VHDL/verilog?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../About%20SpinalHDL/faq.html#could-spinalhdl-scale-up-to-big-projects">Could SpinalHDL scale up to big projects?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../About%20SpinalHDL/faq.html#how-spinalhdl-came-to-be">How SpinalHDL came to be</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../About%20SpinalHDL/faq.html#why-develop-a-new-language-when-there-is-vhdl-verilog-systemverilog">Why develop a new language when there is VHDL/Verilog/SystemVerilog?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../About%20SpinalHDL/faq.html#how-to-use-an-unreleased-version-of-spinalhdl-but-committed-on-git">How to use an unreleased version of SpinalHDL (but committed on git)?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Foreword/index.html">Foreword</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Foreword/index.html#why-moving-away-from-traditional-hdl">Why moving away from traditional HDL</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Foreword/index.html#vhdl-verilog-aren-t-hardware-description-languages">VHDL/Verilog aren’t Hardware Description Languages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Foreword/index.html#event-driven-paradigm-doesn-t-make-any-sense-for-rtl">Event driven paradigm doesn’t make any sense for RTL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Foreword/index.html#recent-revisions-of-vhdl-and-verilog-aren-t-usable">Recent revisions of VHDL and Verilog aren’t usable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Foreword/index.html#vhdl-records-verilog-struct-are-broken-systemverilog-is-good-on-this-if-you-can-use-it">VHDL records, Verilog struct are broken (SystemVerilog is good on this, if you can use it)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Foreword/index.html#vhdl-and-verilog-are-so-verbose">VHDL and Verilog are so verbose</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Foreword/index.html#meta-hardware-description-capabilities">Meta Hardware Description capabilities</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../About%20SpinalHDL/support.html">Support</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../About%20SpinalHDL/support.html#communication-channels">Communication channels</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../About%20SpinalHDL/support.html#commercial-support">Commercial support</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../About%20SpinalHDL/users.html">Users</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../About%20SpinalHDL/users.html#companies">Companies</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../About%20SpinalHDL/users.html#repositories">Repositories</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Introduction/index.html">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Introduction/SpinalHDL.html">About SpinalHDL</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Introduction/SpinalHDL.html#what-is-spinalhdl">What is SpinalHDL?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Introduction/SpinalHDL.html#what-spinalhdl-is-not">What SpinalHDL is not</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Introduction/SpinalHDL.html#the-spinal-development-flow">The Spinal development flow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Introduction/SpinalHDL.html#advantages-of-using-spinalhdl-over-vhdl-verilog">Advantages of using SpinalHDL over VHDL / Verilog</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../Introduction/A%20simple%20example.html">A simple example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Introduction/A%20simple%20example.html#component">Component</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Introduction/A%20simple%20example.html#ports">Ports</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Introduction/A%20simple%20example.html#internal-logic">Internal logic</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Introduction/Projects%20using%20SpinalHDL.html">Projects using SpinalHDL</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Introduction/Projects%20using%20SpinalHDL.html#repositories">Repositories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Introduction/Projects%20using%20SpinalHDL.html#companies">Companies</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Introduction/Getting%20in%20touch.html">Getting in touch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Introduction/License.html">License</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Introduction/Contributing.html">Contributing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Introduction/faq.html">FAQ</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Introduction/faq.html#what-is-the-overhead-of-spinalhdl-generated-rtl-compared-to-human-written-vhdl-verilog">What is the overhead of SpinalHDL generated RTL compared to human written VHDL/Verilog?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Introduction/faq.html#what-if-spinalhdl-becomes-unsupported-in-the-future">What if SpinalHDL becomes unsupported in the future?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Introduction/faq.html#does-spinalhdl-keep-comments-in-generated-vhdl-verilog">Does SpinalHDL keep comments in generated VHDL/verilog?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Introduction/faq.html#could-spinalhdl-scale-up-to-big-projects">Could SpinalHDL scale up to big projects?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Introduction/faq.html#how-spinalhdl-came-to-be">How SpinalHDL came to be</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Introduction/faq.html#why-develop-a-new-language-when-there-is-vhdl-verilog-systemverilog">Why develop a new language when there is VHDL/Verilog/SystemVerilog?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Introduction/faq.html#how-to-use-an-unreleased-version-of-spinalhdl-but-committed-on-git">How to use an unreleased version of SpinalHDL (but committed on git)?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Introduction/Other%20learning%20materials.html">Other learning materials</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Getting%20Started/index.html">Getting Started</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Getting%20Started/getting_started.html">Getting Started</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Getting%20Started/getting_started.html#requirements-things-to-download-to-get-started">Requirements / Things to download to get started</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Getting%20Started/getting_started.html#how-to-start-programming-with-spinalhdl">How to start programming with SpinalHDL</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Getting%20Started/getting_started.html#the-sbt-way">The SBT way</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../Getting%20Started/getting_started.html#the-ide-way-with-intellij-idea-and-its-scala-plugin">The IDE way, with IntelliJ IDEA and its Scala plugin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Getting%20Started/Install%20and%20setup.html">Install and setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Getting%20Started/Install%20and%20setup.html#mandatory-requirements">Mandatory requirements</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Getting%20Started/Install%20and%20setup.html#installing-sbt-in-an-internet-free-environment">Installing SBT in an internet-free environment</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../Getting%20Started/getting_started.html#a-very-simple-spinalhdl-example">A very simple SpinalHDL example</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Getting%20Started/getting_started.html#generated-code">Generated code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Getting%20Started/Install%20and%20setup.html#recommended-requirements">Recommended requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Getting%20Started/Install%20and%20setup.html#create-a-spinalhdl-project">Create a SpinalHDL project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Getting%20Started/Install%20and%20setup.html#the-directory-structure-of-a-project">The directory structure of a project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Getting%20Started/Install%20and%20setup.html#using-spinal-on-spinalhdl-code">Using Spinal on SpinalHDL code</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../Getting%20Started/getting_started.html#what-to-do-next">What to do next?</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../Getting%20Started/motivation.html">Motivation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Getting%20Started/presentation.html">Presentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Getting%20Started/SBT.html">Using Spinal from CLI with SBT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Getting%20Started/VSCodium.html">Using Spinal from VSCodium</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Getting%20Started/IntelliJ.html">Using Spinal from IntelliJ IDEA</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Getting%20Started/Scala%20Guide/index.html">Scala Guide</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Getting%20Started/Scala%20Guide/basics.html">Basics</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../Getting%20Started/Scala%20Guide/basics.html#types">Types</a></li>
@@ -211,6 +235,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../Data%20types/bool.html#comparison">Comparison</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Data%20types/bool.html#type-cast">Type cast</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Data%20types/bool.html#misc">Misc</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Data%20types/bool.html#maskedboolean">MaskedBoolean</a></li>
 </ul>
 </li>
 </ul>
@@ -224,6 +249,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../Data%20types/bits.html#type-cast">Type cast</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Data%20types/bits.html#bit-extraction">Bit extraction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Data%20types/bits.html#misc">Misc</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Data%20types/bits.html#maskedliteral">MaskedLiteral</a></li>
 </ul>
 </li>
 </ul>
@@ -257,6 +283,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../Data%20types/enum.html#operators">Operators</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../Data%20types/enum.html#comparison">Comparison</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Data%20types/enum.html#types">Types</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Data%20types/enum.html#type-cast">Type cast</a></li>
 </ul>
 </li>
@@ -264,7 +291,10 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Data%20types/bundle.html">Bundle</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Data%20types/bundle.html#description">Description</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Data%20types/bundle.html#declaration">Declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Data%20types/bundle.html#declaration">Declaration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Data%20types/bundle.html#conditional-signals">Conditional signals</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../Data%20types/bundle.html#operators">Operators</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../Data%20types/bundle.html#comparison">Comparison</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Data%20types/bundle.html#type-cast">Type cast</a></li>
@@ -288,6 +318,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../Data%20types/Vec.html#comparison">Comparison</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Data%20types/Vec.html#type-cast">Type cast</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Data%20types/Vec.html#misc">Misc</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Data%20types/Vec.html#lib-helper-functions">Lib helper functions</a></li>
 </ul>
 </li>
 </ul>
@@ -336,6 +367,16 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../Data%20types/AFix.html">AFix</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Data%20types/AFix.html#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Data%20types/AFix.html#declaration">Declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Data%20types/AFix.html#mathematical-operations">Mathematical Operations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Data%20types/AFix.html#inequality-operations">Inequality Operations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Data%20types/AFix.html#bitshifting">Bitshifting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Data%20types/AFix.html#saturation-and-rounding">Saturation and Rounding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Data%20types/AFix.html#assignment">Assignment</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../Data%20types/index.html#introduction">Introduction</a></li>
 </ul>
 </li>
@@ -364,12 +405,14 @@
 <li class="toctree-l4"><a class="reference internal" href="../Structuring/clock_domain.html#configuration">Configuration</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Structuring/clock_domain.html#internal-clock">Internal clock</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Structuring/clock_domain.html#external-clock">External clock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Structuring/clock_domain.html#signal-priorities-in-hdl-generation">Signal priorities in HDL generation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Structuring/clock_domain.html#context">Context</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../Structuring/clock_domain.html#clock-domain-crossing">Clock domain crossing</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Structuring/clock_domain.html#special-clocking-areas">Special clocking Areas</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../Structuring/clock_domain.html#slow-area">Slow Area</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Structuring/clock_domain.html#bootreset">BootReset</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Structuring/clock_domain.html#resetarea">ResetArea</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Structuring/clock_domain.html#clockenablearea">ClockEnableArea</a></li>
 </ul>
@@ -406,6 +449,12 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../Structuring/parametrization.html">Parametrization</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Structuring/parametrization.html#introduction">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Structuring/parametrization.html#elaboration-time-parameters">Elaboration time parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Structuring/parametrization.html#optional-hardware">Optional hardware</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Semantic</a><ul class="current">
@@ -417,11 +466,15 @@
 </li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">When/Switch/Mux</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#when">When</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#switch">Switch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#switch">Switch</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#example">Example</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#additional-options">Additional options</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#local-declaration">Local declaration</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#mux">Mux</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#bitwise-selection">Bitwise selection</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#example">Example</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id1">Example</a></li>
 </ul>
 </li>
 </ul>
@@ -441,10 +494,13 @@
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/registers.html#instantiation">Instantiation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/registers.html#reset-value">Reset value</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/registers.html#initialization-value-for-simulation-purposes">Initialization value for simulation purposes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/registers.html#register-vectors">Register vectors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/registers.html#transforming-a-wire-into-a-register">Transforming a wire into a register</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Sequential%20logic/memory.html">RAM/ROM</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/memory.html#syntax">Syntax</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/memory.html#synchronous-enable-quirk">Synchronous enable quirk</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/memory.html#read-under-write-policy">Read-under-write policy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/memory.html#mixed-width-ram">Mixed-width ram</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/memory.html#automatic-blackboxing">Automatic blackboxing</a><ul>
@@ -491,6 +547,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../Design%20errors/latch_detected.html">Latch detected</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Design%20errors/latch_detected.html#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Design%20errors/latch_detected.html#example">Example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Design%20errors/latch_detected.html#due-to-mux">Due to mux</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Design%20errors/no_driver_on.html">No driver on</a><ul>
@@ -518,7 +575,8 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Design%20errors/spinal_cant_clone.html">Spinal can’t clone class</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Design%20errors/spinal_cant_clone.html#introduction">Introduction</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Design%20errors/spinal_cant_clone.html#example">Example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Design%20errors/spinal_cant_clone.html#example-1">Example 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Design%20errors/spinal_cant_clone.html#example-2">Example 2</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Design%20errors/unassigned_register.html">Unassigned register</a><ul>
@@ -557,16 +615,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../Other%20language%20features/stub.html">Stub</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Other%20language%20features/assertion.html">Assertions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Other%20language%20features/report.html">Report</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Other%20language%20features/formal.html">Formal</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/formal.html#general">General</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/formal.html#clocked-assertion-without-reset">Clocked assertion without reset</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/formal.html#specifying-the-initial-value-of-a-signal">Specifying the initial value of a signal</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/formal.html#specifying-a-initial-assumption">Specifying a initial assumption</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/formal.html#specifying-assertion-in-the-reset-scope">Specifying assertion in the reset scope</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/formal.html#supported-features">Supported features</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/formal.html#limitations">Limitations</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="../Other%20language%20features/scope_property.html">ScopeProperty</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Other%20language%20features/analog_inout.html">Analog and inout</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/analog_inout.html#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/analog_inout.html#analog">Analog</a></li>
@@ -616,17 +665,22 @@
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/stream.html#streamfifo">StreamFifo</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/stream.html#streamfifocc">StreamFifoCC</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/stream.html#streamccbytoggle">StreamCCByToggle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/stream.html#streamwidthadapter">StreamWidthAdapter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/stream.html#streamarbiter">StreamArbiter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/stream.html#streamjoin">StreamJoin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/stream.html#streamfork">StreamFork</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/stream.html#streammux">StreamMux</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/stream.html#streamdemux">StreamDemux</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/stream.html#streamdispatchersequencial">StreamDispatcherSequencial</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/stream.html#simulation-support">Simulation support</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Libraries/flow.html">Flow</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/flow.html#specification">Specification</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/flow.html#functions">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/flow.html#code-example">Code example</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Libraries/fragment.html">Fragment</a><ul>
@@ -636,11 +690,17 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Libraries/fsm.html">State machine</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/fsm.html#introduction">Introduction</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Libraries/fsm.html#statemachine">StateMachine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/fsm.html#statemachine">StateMachine</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/fsm.html#entry-point">Entry point</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/fsm.html#transitions">Transitions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/fsm.html#state-encoding">State encoding</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/fsm.html#states">States</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/fsm.html#statedelay">StateDelay</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/fsm.html#statefsm">StateFsm</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/fsm.html#stateparallelfsm">StateParallelFsm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/fsm.html#notes-about-the-entry-state">Notes about the entry state</a></li>
 </ul>
 </li>
 </ul>
@@ -672,6 +732,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#automatic-allocation">Automatic allocation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#access-types">28 Access Types</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#automatic-documentation-generation">Automatic documentation generation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#example">Example</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#interrupt-factory">Interrupt Factory</a></li>
 </ul>
 </li>
@@ -679,10 +740,10 @@
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#ip-level-interrupt-factory">IP level interrupt Factory</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#sys-level-interrupt-merge">SYS level interrupt merge</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#spinal-factory">Spinal Factory</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#example">Example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#id1">Example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#developers-area">Developers Area</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../Libraries/regIf.html#developers-area">Developers Area</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Libraries/Bus/index.html">Bus</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/Bus/amba3/ahblite3.html">AHB-Lite3</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/amba3/ahblite3.html#configuration-and-instanciation">Configuration and instanciation</a></li>
@@ -714,6 +775,19 @@
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/uart.html#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/uart.html#bus-definition">Bus definition</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/uart.html#uartctrl">UartCtrl</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/Com/usb_device.html">USB device</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/usb_device.html#introduction">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/usb_device.html#architecture">Architecture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/usb_device.html#registers">Registers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/usb_device.html#descriptors">Descriptors</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/usb_device.html#usage">Usage</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/Com/usb_ohci.html">USB OHCI</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/usb_ohci.html#introduction">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/usb_ohci.html#usage">Usage</a></li>
 </ul>
 </li>
 </ul>
@@ -781,6 +855,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../Simulation/install/index.html#backend-dependent-installation-instructions">Backend-dependent installation instructions</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../Simulation/install/GHDL.html">Setup and installation of GHDL</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Simulation/install/Icarus%20Verilog.html">Setup and installation of Icarus Verilog</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Simulation/install/VCS.html">VCS Simulation Configuration</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Simulation/install/Verilator.html">Setup and installation of Verilator</a></li>
 </ul>
 </li>
@@ -826,7 +901,37 @@
 <li class="toctree-l2"><a class="reference internal" href="../Simulation/index.html#introduction">Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Simulation/index.html#how-spinalhdl-simulates-the-hardware-with-verilator-backend">How SpinalHDL simulates the hardware with Verilator backend</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Simulation/index.html#how-spinalhdl-simulates-the-hardware-with-ghdl-icarus-verilog-backend">How SpinalHDL simulates the hardware with GHDL/Icarus Verilog backend</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Simulation/index.html#how-spinalhdl-simulates-the-hardware-with-synopsys-vcs-backend">How SpinalHDL simulates the hardware with Synopsys VCS backend</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Simulation/index.html#performance">Performance</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Formal%20verification/index.html">Formal verification</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Formal%20verification/index.html#general">General</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Formal%20verification/index.html#formal-backend">Formal backend</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Formal%20verification/index.html#installing-requirements">Installing requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Formal%20verification/index.html#example">Example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#external-assertions">External assertions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#internal-assertions">Internal assertions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#external-stimulus">External stimulus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#more-assertions-past">More assertions / past</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#assuming-memory-content">Assuming memory content</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Formal%20verification/index.html#utilities-and-primitives">Utilities and primitives</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#assertions-clock-reset">Assertions / clock / reset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#specifying-the-initial-value-of-a-signal">Specifying the initial value of a signal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#specifying-a-initial-assumption">Specifying a initial assumption</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#memory-content-mem">Memory content (Mem)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#specifying-assertion-in-the-reset-scope">Specifying assertion in the reset scope</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#formal-primitives">Formal primitives</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Formal%20verification/index.html#limitations">Limitations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Formal%20verification/index.html#naming-polices">Naming polices</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#for-component">For Component</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#for-interfaces-implement-imasterslave">For interfaces implement IMasterSlave</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Examples/index.html">Examples</a><ul>
@@ -970,6 +1075,14 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../Developers%20area/mill%20support.html">Build through Mill</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Developers%20area/mill%20support.html#complie-the-library">Complie the library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Developers%20area/mill%20support.html#run-all-test-suites">Run all test suites</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Developers%20area/mill%20support.html#run-a-specified-test-suite">Run a specified test suite</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Developers%20area/mill%20support.html#run-a-specified-app">Run a specified App</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Developers%20area/mill%20support.html#publish-locally">Publish locally</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../Developers%20area/spinalhdl_datamodel.html">SpinalHDL internal datamodel</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/spinalhdl_datamodel.html#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/spinalhdl_datamodel.html#general-structure">General structure</a></li>
@@ -977,6 +1090,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/spinalhdl_datamodel.html#compilation-phases">Compilation Phases</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/spinalhdl_datamodel.html#modifying-a-netlist-as-a-user-without-plugins">Modifying a netlist as a user without plugins</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/spinalhdl_datamodel.html#user-space-netlist-analysis">User space netlist analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Developers%20area/spinalhdl_datamodel.html#enumerating-every-clockdomain-used">Enumerating every ClockDomain used</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Developers%20area/types.html">Types</a><ul>
@@ -1078,51 +1192,131 @@
            <div itemprop="articleBody">
             
   <div class="section" id="when-switch-mux">
-<h1>When/Switch/Mux<a class="headerlink" href="#when-switch-mux" title="Permalink to this headline">¶</a></h1>
+<h1>When/Switch/Mux<a class="headerlink" href="#when-switch-mux" title="Permalink to this heading">¶</a></h1>
 <div class="section" id="when">
-<h2>When<a class="headerlink" href="#when" title="Permalink to this headline">¶</a></h2>
+<h2>When<a class="headerlink" href="#when" title="Permalink to this heading">¶</a></h2>
 <p>As in VHDL and Verilog, signals can be conditionally assigned when a specified condition is met:</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="n">when</span><span class="p">(</span><span class="n">cond1</span><span class="p">)</span> <span class="p">{</span>
-  <span class="c1">// Execute when cond1 is true</span>
-<span class="p">}.</span><span class="n">elsewhen</span><span class="p">(</span><span class="n">cond2</span><span class="p">)</span> <span class="p">{</span>
-  <span class="c1">// Execute when (not cond1) and cond2</span>
-<span class="p">}.</span><span class="n">otherwise</span> <span class="p">{</span>
-  <span class="c1">// Execute when (not cond1) and (not cond2)</span>
-<span class="p">}</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="n">when</span><span class="p">(</span><span class="n">cond1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// Execute when cond1 is true</span>
+<span class="p">}.</span><span class="n">elsewhen</span><span class="p">(</span><span class="n">cond2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// Execute when (not cond1) and cond2</span>
+<span class="p">}.</span><span class="n">otherwise</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// Execute when (not cond1) and (not cond2)</span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If the keyword <code class="docutils literal notranslate"><span class="pre">otherwise</span></code> is on the same line as the closing bracket <code class="docutils literal notranslate"><span class="pre">}</span></code> of the <code class="docutils literal notranslate"><span class="pre">when</span></code> condition, no dot is needed.</p>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="n">when</span><span class="p">(</span><span class="n">cond1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// Execute when cond1 is true</span>
+<span class="p">}</span><span class="w"> </span><span class="n">otherwise</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// Execute when (not cond1) and (not cond2)</span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>But if <code class="docutils literal notranslate"><span class="pre">.otherwise</span></code> is on another line, a dot is <strong>required</strong>:</p>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="n">when</span><span class="p">(</span><span class="n">cond1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// Execute when cond1 is true</span>
+<span class="p">}</span><span class="w"></span>
+<span class="p">.</span><span class="n">otherwise</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// Execute when (not cond1) and (not cond2)</span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
 </div>
 </div>
 <div class="section" id="switch">
-<h2>Switch<a class="headerlink" href="#switch" title="Permalink to this headline">¶</a></h2>
+<h2>Switch<a class="headerlink" href="#switch" title="Permalink to this heading">¶</a></h2>
 <p>As in VHDL and Verilog, signals can be conditionally assigned when a signal has a defined value:</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="n">switch</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="p">{</span>
-  <span class="n">is</span><span class="p">(</span><span class="n">value1</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">// Execute when x === value1</span>
-  <span class="p">}</span>
-  <span class="n">is</span><span class="p">(</span><span class="n">value2</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">// Execute when x === value2</span>
-  <span class="p">}</span>
-  <span class="n">default</span> <span class="p">{</span>
-    <span class="c1">// Execute if none of precedent conditions met</span>
-  <span class="p">}</span>
-<span class="p">}</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="n">switch</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">is</span><span class="p">(</span><span class="n">value1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// Execute when x === value1</span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="n">is</span><span class="p">(</span><span class="n">value2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// Execute when x === value2</span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="n">default</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// Execute if none of precedent conditions met</span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">is</span></code> clauses can be factorized by separating them with a comma <code class="docutils literal notranslate"><span class="pre">is(value1,</span> <span class="pre">value2)</span></code>.</p>
+<div class="section" id="example">
+<h3>Example<a class="headerlink" href="#example" title="Permalink to this heading">¶</a></h3>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="n">switch</span><span class="p">(</span><span class="n">aluop</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">is</span><span class="p">(</span><span class="nc">ALUOp</span><span class="p">.</span><span class="n">add</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">immediate</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">instruction</span><span class="p">.</span><span class="n">immI</span><span class="p">.</span><span class="n">signExtend</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="n">is</span><span class="p">(</span><span class="nc">ALUOp</span><span class="p">.</span><span class="n">slt</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">immediate</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">instruction</span><span class="p">.</span><span class="n">immI</span><span class="p">.</span><span class="n">signExtend</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="n">is</span><span class="p">(</span><span class="nc">ALUOp</span><span class="p">.</span><span class="n">sltu</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">immediate</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">instruction</span><span class="p">.</span><span class="n">immI</span><span class="p">.</span><span class="n">signExtend</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="n">is</span><span class="p">(</span><span class="nc">ALUOp</span><span class="p">.</span><span class="n">sll</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">immediate</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">instruction</span><span class="p">.</span><span class="n">shamt</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="n">is</span><span class="p">(</span><span class="nc">ALUOp</span><span class="p">.</span><span class="n">sra</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">immediate</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">instruction</span><span class="p">.</span><span class="n">shamt</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>is equivalent to</p>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="n">switch</span><span class="p">(</span><span class="n">aluop</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">is</span><span class="p">(</span><span class="nc">ALUOp</span><span class="p">.</span><span class="n">add</span><span class="p">,</span><span class="w"> </span><span class="nc">ALUOp</span><span class="p">.</span><span class="n">slt</span><span class="p">,</span><span class="w"> </span><span class="nc">ALUOp</span><span class="p">.</span><span class="n">sltu</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="n">immediate</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">instruction</span><span class="p">.</span><span class="n">immI</span><span class="p">.</span><span class="n">signExtend</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="n">is</span><span class="p">(</span><span class="nc">ALUOp</span><span class="p">.</span><span class="n">sll</span><span class="p">,</span><span class="w"> </span><span class="nc">ALUOp</span><span class="p">.</span><span class="n">sra</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="n">immediate</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">instruction</span><span class="p">.</span><span class="n">shamt</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
+<div class="section" id="additional-options">
+<h3>Additional options<a class="headerlink" href="#additional-options" title="Permalink to this heading">¶</a></h3>
+<p>By default, SpinalHDL will generate an “UNREACHABLE DEFAULT STATEMENT” error if a <code class="docutils literal notranslate"><span class="pre">switch</span></code> contains a <code class="docutils literal notranslate"><span class="pre">default</span></code> statement while all the possible logical values of the <code class="docutils literal notranslate"><span class="pre">switch</span></code> are already covered by the <code class="docutils literal notranslate"><span class="pre">is</span></code> statements. You can drop this error reporting by specifying `` switch(myValue, coverUnreachable = true) { … }``.</p>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="n">switch</span><span class="p">(</span><span class="n">my2Bits</span><span class="p">,</span><span class="w"> </span><span class="n">coverUnreachable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">is</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="n">is</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="n">is</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="n">is</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="n">default</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="c1">// This will be okay</span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This check is done on the logical values, not on the physical values. For instance, if you have a SpinalEnum(A,B,C) encoded in a on-hot manner, SpinalHDL will only care about the A,B,C values (“001” “010” “100”). Pyhsical values as “000” “011” “101” “110” “111” will not be taken in account.</p>
+</div>
+<p>By default, SpinalHDL will generate a “DUPLICATED ELEMENTS IN SWITCH IS(…) STATEMENT” error if a given <code class="docutils literal notranslate"><span class="pre">is</span></code> statement provides multiple times the same value. For instance <code class="docutils literal notranslate"><span class="pre">is(42,42)</span> <span class="pre">{</span> <span class="pre">...</span> <span class="pre">}</span></code>
+You can drop this error reporting by specifying <code class="docutils literal notranslate"><span class="pre">switch(myValue,</span> <span class="pre">strict</span> <span class="pre">=</span> <span class="pre">true){</span> <span class="pre">...</span> <span class="pre">}</span></code>. SpinalHDL will then take care of removing duplicated values.</p>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="n">switch</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="n">strict</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">is</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="n">is</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="c1">// This will be okay</span>
+<span class="w">    </span><span class="n">is</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
 <div class="section" id="local-declaration">
-<h2>Local declaration<a class="headerlink" href="#local-declaration" title="Permalink to this headline">¶</a></h2>
+<h2>Local declaration<a class="headerlink" href="#local-declaration" title="Permalink to this heading">¶</a></h2>
 <p>It is possible to define new signals inside a when/switch statement:</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="nc">UInt</span><span class="p">(</span><span class="mi">4</span> <span class="n">bits</span><span class="p">)</span>
-<span class="kd">val</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="nc">UInt</span><span class="p">(</span><span class="mi">4</span> <span class="n">bits</span><span class="p">)</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">UInt</span><span class="p">(</span><span class="mi">4</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">UInt</span><span class="p">(</span><span class="mi">4</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span><span class="w"></span>
 
-<span class="n">when</span><span class="p">(</span><span class="n">cond</span><span class="p">)</span> <span class="p">{</span>
-  <span class="kd">val</span> <span class="n">tmp</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
-  <span class="n">x</span> <span class="o">:=</span> <span class="n">tmp</span>
-  <span class="n">y</span> <span class="o">:=</span> <span class="n">tmp</span> <span class="o">+</span> <span class="mi">1</span>
-<span class="p">}</span> <span class="n">otherwise</span> <span class="p">{</span>
-  <span class="n">x</span> <span class="o">:=</span> <span class="mi">0</span>
-  <span class="n">y</span> <span class="o">:=</span> <span class="mi">0</span>
-<span class="p">}</span>
+<span class="n">when</span><span class="p">(</span><span class="n">cond</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">tmp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="w"></span>
+<span class="w">  </span><span class="n">x</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">tmp</span><span class="w"></span>
+<span class="w">  </span><span class="n">y</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">tmp</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="w"></span>
+<span class="p">}</span><span class="w"> </span><span class="n">otherwise</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">x</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
+<span class="w">  </span><span class="n">y</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <div class="admonition note">
@@ -1131,7 +1325,7 @@
 </div>
 </div>
 <div class="section" id="mux">
-<h2>Mux<a class="headerlink" href="#mux" title="Permalink to this headline">¶</a></h2>
+<h2>Mux<a class="headerlink" href="#mux" title="Permalink to this heading">¶</a></h2>
 <p>If you just need a <code class="docutils literal notranslate"><span class="pre">Mux</span></code> with a <code class="docutils literal notranslate"><span class="pre">Bool</span></code> selection signal, there are two equivalent syntaxes:</p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -1156,47 +1350,64 @@
 </tr>
 </tbody>
 </table>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span> <span class="n">cond</span> <span class="o">=</span> <span class="nc">Bool</span>
-<span class="kd">val</span> <span class="n">whenTrue</span><span class="p">,</span> <span class="n">whenFalse</span> <span class="o">=</span> <span class="nc">UInt</span><span class="p">(</span><span class="mi">8</span> <span class="n">bits</span><span class="p">)</span>
-<span class="kd">val</span> <span class="n">muxOutput</span>  <span class="o">=</span> <span class="nc">Mux</span><span class="p">(</span><span class="n">cond</span><span class="p">,</span> <span class="n">whenTrue</span><span class="p">,</span> <span class="n">whenFalse</span><span class="p">)</span>
-<span class="kd">val</span> <span class="n">muxOutput2</span> <span class="o">=</span> <span class="n">cond</span> <span class="o">?</span> <span class="n">whenTrue</span> <span class="o">|</span> <span class="n">whenFalse</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">cond</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Bool</span><span class="p">()</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">whenTrue</span><span class="p">,</span><span class="w"> </span><span class="n">whenFalse</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">UInt</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">muxOutput</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="nc">Mux</span><span class="p">(</span><span class="n">cond</span><span class="p">,</span><span class="w"> </span><span class="n">whenTrue</span><span class="p">,</span><span class="w"> </span><span class="n">whenFalse</span><span class="p">)</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">muxOutput2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cond</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">whenTrue</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">whenFalse</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="bitwise-selection">
-<h2>Bitwise selection<a class="headerlink" href="#bitwise-selection" title="Permalink to this headline">¶</a></h2>
+<h2>Bitwise selection<a class="headerlink" href="#bitwise-selection" title="Permalink to this heading">¶</a></h2>
 <p>A bitwise selection looks like the VHDL <code class="docutils literal notranslate"><span class="pre">when</span></code> syntax.</p>
-<div class="section" id="example">
-<h3>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span> <span class="n">bitwiseSelect</span> <span class="o">=</span> <span class="nc">UInt</span><span class="p">(</span><span class="mi">2</span> <span class="n">bits</span><span class="p">)</span>
-<span class="kd">val</span> <span class="n">bitwiseResult</span> <span class="o">=</span> <span class="n">bitwiseSelect</span><span class="p">.</span><span class="n">mux</span><span class="p">(</span>
-  <span class="mi">0</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="n">io</span><span class="p">.</span><span class="n">src0</span> <span class="n">&amp;</span> <span class="n">io</span><span class="p">.</span><span class="n">src1</span><span class="p">),</span>
-  <span class="mi">1</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="n">io</span><span class="p">.</span><span class="n">src0</span> <span class="o">|</span> <span class="n">io</span><span class="p">.</span><span class="n">src1</span><span class="p">),</span>
-  <span class="mi">2</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="n">io</span><span class="p">.</span><span class="n">src0</span> <span class="n">^</span> <span class="n">io</span><span class="p">.</span><span class="n">src1</span><span class="p">),</span>
-  <span class="n">default</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="n">io</span><span class="p">.</span><span class="n">src0</span><span class="p">)</span>
-<span class="p">)</span>
+<div class="section" id="id1">
+<h3>Example<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h3>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">bitwiseSelect</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">UInt</span><span class="p">(</span><span class="mi">2</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">bitwiseResult</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bitwiseSelect</span><span class="p">.</span><span class="n">mux</span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="mi">0</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">(</span><span class="n">io</span><span class="p">.</span><span class="n">src0</span><span class="w"> </span><span class="n">&amp;</span><span class="w"> </span><span class="n">io</span><span class="p">.</span><span class="n">src1</span><span class="p">),</span><span class="w"></span>
+<span class="w">  </span><span class="mi">1</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">(</span><span class="n">io</span><span class="p">.</span><span class="n">src0</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">io</span><span class="p">.</span><span class="n">src1</span><span class="p">),</span><span class="w"></span>
+<span class="w">  </span><span class="mi">2</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">(</span><span class="n">io</span><span class="p">.</span><span class="n">src0</span><span class="w"> </span><span class="n">^</span><span class="w"> </span><span class="n">io</span><span class="p">.</span><span class="n">src1</span><span class="p">),</span><span class="w"></span>
+<span class="w">  </span><span class="n">default</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">(</span><span class="n">io</span><span class="p">.</span><span class="n">src0</span><span class="p">)</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
 </pre></div>
 </div>
-<p>Also, if all possible values are covered in your mux, you can omit the default value:</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span> <span class="n">bitwiseSelect</span> <span class="o">=</span> <span class="nc">UInt</span><span class="p">(</span><span class="mi">2</span> <span class="n">bits</span><span class="p">)</span>
-<span class="kd">val</span> <span class="n">bitwiseResult</span> <span class="o">=</span> <span class="n">bitwiseSelect</span><span class="p">.</span><span class="n">mux</span><span class="p">(</span>
-  <span class="mi">0</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="n">io</span><span class="p">.</span><span class="n">src0</span> <span class="n">&amp;</span> <span class="n">io</span><span class="p">.</span><span class="n">src1</span><span class="p">),</span>
-  <span class="mi">1</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="n">io</span><span class="p">.</span><span class="n">src0</span> <span class="o">|</span> <span class="n">io</span><span class="p">.</span><span class="n">src1</span><span class="p">),</span>
-  <span class="mi">2</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="n">io</span><span class="p">.</span><span class="n">src0</span> <span class="n">^</span> <span class="n">io</span><span class="p">.</span><span class="n">src1</span><span class="p">),</span>
-  <span class="mi">3</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="n">io</span><span class="p">.</span><span class="n">src0</span><span class="p">)</span>
-<span class="p">)</span>
+<p><code class="docutils literal notranslate"><span class="pre">mux</span></code> checks that all possible values are covered to prevent generation of latches.
+If all possible values are covered, the default statement must not be added:</p>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">bitwiseSelect</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">UInt</span><span class="p">(</span><span class="mi">2</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">bitwiseResult</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bitwiseSelect</span><span class="p">.</span><span class="n">mux</span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="mi">0</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">(</span><span class="n">io</span><span class="p">.</span><span class="n">src0</span><span class="w"> </span><span class="n">&amp;</span><span class="w"> </span><span class="n">io</span><span class="p">.</span><span class="n">src1</span><span class="p">),</span><span class="w"></span>
+<span class="w">  </span><span class="mi">1</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">(</span><span class="n">io</span><span class="p">.</span><span class="n">src0</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">io</span><span class="p">.</span><span class="n">src1</span><span class="p">),</span><span class="w"></span>
+<span class="w">  </span><span class="mi">2</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">(</span><span class="n">io</span><span class="p">.</span><span class="n">src0</span><span class="w"> </span><span class="n">^</span><span class="w"> </span><span class="n">io</span><span class="p">.</span><span class="n">src1</span><span class="p">),</span><span class="w"></span>
+<span class="w">  </span><span class="mi">3</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">(</span><span class="n">io</span><span class="p">.</span><span class="n">src0</span><span class="p">)</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
 </pre></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">muxLists(...)</span></code> is another bitwise selection which takes a sequence of tuples as input. Below is an example of dividing a <code class="docutils literal notranslate"><span class="pre">Bits</span></code> of 128 bits into 32 bits:</p>
+<p><code class="docutils literal notranslate"><span class="pre">muxList(...)</span></code> and <code class="docutils literal notranslate"><span class="pre">muxListDc(...)</span></code> are alternatives bitwise selectors that take a sequence of tuples or mappings as input.</p>
+<p><code class="docutils literal notranslate"><span class="pre">muxList</span></code> can be used as a direct replacement for <code class="docutils literal notranslate"><span class="pre">mux</span></code>, providing a easier to use interface in code that generates the cases.
+It has the same checking behavior as <code class="docutils literal notranslate"><span class="pre">mux</span></code> does, requiring full coverage and prohibiting listing a default if it is not needed.</p>
+<p><code class="docutils literal notranslate"><span class="pre">muxtListDc</span></code> can be used if the uncovered values are not important, they can be left unassigned by using <code class="docutils literal notranslate"><span class="pre">muxListDc</span></code>.
+This will add a default case if needed. This default case will generate X’s during the simulation if ever encountered.
+<code class="docutils literal notranslate"><span class="pre">muxListDc(...)</span></code> is often a good alternative in generic code.</p>
+<p>Below is an example of dividing a <code class="docutils literal notranslate"><span class="pre">Bits</span></code> of 128 bits into 32 bits:</p>
 <a class="reference internal image-reference" href="../../_images/MuxList.png"><img alt="../../_images/MuxList.png" class="align-center" src="../../_images/MuxList.png" style="width: 300px;" /></a>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span> <span class="n">sel</span>  <span class="o">=</span> <span class="nc">UInt</span><span class="p">(</span><span class="mi">2</span> <span class="n">bits</span><span class="p">)</span>
-<span class="kd">val</span> <span class="n">data</span> <span class="o">=</span> <span class="nc">Bits</span><span class="p">(</span><span class="mi">128</span> <span class="n">bits</span><span class="p">)</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">sel</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="nc">UInt</span><span class="p">(</span><span class="mi">2</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Bits</span><span class="p">(</span><span class="mi">128</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span><span class="w"></span>
 
 <span class="c1">// Dividing a wide Bits type into smaller chunks, using a mux:</span>
-<span class="kd">val</span> <span class="n">dataWord</span> <span class="o">=</span> <span class="n">sel</span><span class="p">.</span><span class="n">muxList</span><span class="p">(</span><span class="k">for</span> <span class="p">(</span><span class="n">index</span> <span class="o">&lt;-</span> <span class="mi">0</span> <span class="n">until</span> <span class="mi">4</span><span class="p">)</span> <span class="k">yield</span> <span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">data</span><span class="p">(</span><span class="n">index</span><span class="o">*</span><span class="mi">32</span><span class="o">+</span><span class="mi">32</span><span class="o">-</span><span class="mi">1</span> <span class="n">downto</span> <span class="n">index</span><span class="o">*</span><span class="mi">32</span><span class="p">)))</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">dataWord</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sel</span><span class="p">.</span><span class="n">muxList</span><span class="p">(</span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">index</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="n">until</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="k">yield</span><span class="w"> </span><span class="p">(</span><span class="n">index</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="p">(</span><span class="n">index</span><span class="o">*</span><span class="mi">32</span><span class="o">+</span><span class="mi">32</span><span class="o">-</span><span class="mi">1</span><span class="w"> </span><span class="n">downto</span><span class="w"> </span><span class="n">index</span><span class="o">*</span><span class="mi">32</span><span class="p">)))</span><span class="w"></span>
 
 <span class="c1">// A shorter way to do the same thing:</span>
-<span class="kd">val</span> <span class="n">dataWord</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">subdivideIn</span><span class="p">(</span><span class="mi">32</span> <span class="n">bits</span><span class="p">)(</span><span class="n">sel</span><span class="p">)</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">dataWord</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">data</span><span class="p">.</span><span class="n">subdivideIn</span><span class="p">(</span><span class="mi">32</span><span class="w"> </span><span class="n">bits</span><span class="p">)(</span><span class="n">sel</span><span class="p">)</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Example for <code class="docutils literal notranslate"><span class="pre">muxListDc</span></code> selecting bits from a configurable width vector:</p>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">case</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">Example</span><span class="p">(</span><span class="n">width</span><span class="p">:</span><span class="w"> </span><span class="nc">Int</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// 2 bit wide for default width</span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">sel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">UInt</span><span class="p">(</span><span class="n">log2Up</span><span class="p">(</span><span class="n">count</span><span class="p">)</span><span class="w"> </span><span class="n">bit</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Bits</span><span class="p">(</span><span class="n">width</span><span class="o">*</span><span class="mi">8</span><span class="w"> </span><span class="n">bit</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// no need to cover missing case 3 for default width</span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">dataByte</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sel</span><span class="p">.</span><span class="n">muxListDc</span><span class="p">(</span><span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="n">until</span><span class="w"> </span><span class="n">count</span><span class="p">)</span><span class="w"> </span><span class="k">yield</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="p">(</span><span class="n">index</span><span class="o">*</span><span class="mi">8</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="w"> </span><span class="n">bit</span><span class="p">)))</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
@@ -1223,7 +1434,7 @@
 
   <div role="contentinfo">
     <p>
-        &#169; Copyright 2018, SpinalHDL.
+        &#169; Copyright 2022, SpinalHDL.
 
     </p>
   </div>
@@ -1259,6 +1470,11 @@
       <dt>Branches</dt>
       <dd><a href="when_switch.html">dev</a></dd>
       <dd><a href="../../../master/SpinalHDL/Semantic/when_switch.html">master</a></dd>
+    </dl>
+    <dl>
+      <dt>Downloads</dt>
+      <dd><a href="../../artefacts/SpinalHDL_docs-dev.">HTML</a></dd>
+      <dd><a href="../../artefacts/SpinalHDL_docs-dev.pdf">PDF</a></dd>
     </dl>
   </div>
 </div>

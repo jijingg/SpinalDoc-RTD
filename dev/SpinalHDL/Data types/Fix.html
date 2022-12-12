@@ -35,7 +35,9 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/skins/default.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/wavedrom.min.js"></script>
     
@@ -91,46 +93,68 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../About%20SpinalHDL/index.html">About SpinalHDL</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../About%20SpinalHDL/faq.html">FAQ</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../About%20SpinalHDL/faq.html#what-is-the-overhead-of-spinalhdl-generated-rtl-compared-to-human-written-vhdl-verilog">What is the overhead of SpinalHDL generated RTL compared to human written VHDL/Verilog?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../About%20SpinalHDL/faq.html#what-if-spinalhdl-becomes-unsupported-in-the-future">What if SpinalHDL becomes unsupported in the future?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../About%20SpinalHDL/faq.html#does-spinalhdl-keep-comments-in-generated-vhdl-verilog">Does SpinalHDL keep comments in generated VHDL/verilog?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../About%20SpinalHDL/faq.html#could-spinalhdl-scale-up-to-big-projects">Could SpinalHDL scale up to big projects?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../About%20SpinalHDL/faq.html#how-spinalhdl-came-to-be">How SpinalHDL came to be</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../About%20SpinalHDL/faq.html#why-develop-a-new-language-when-there-is-vhdl-verilog-systemverilog">Why develop a new language when there is VHDL/Verilog/SystemVerilog?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../About%20SpinalHDL/faq.html#how-to-use-an-unreleased-version-of-spinalhdl-but-committed-on-git">How to use an unreleased version of SpinalHDL (but committed on git)?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Foreword/index.html">Foreword</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Foreword/index.html#why-moving-away-from-traditional-hdl">Why moving away from traditional HDL</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Foreword/index.html#vhdl-verilog-aren-t-hardware-description-languages">VHDL/Verilog aren’t Hardware Description Languages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Foreword/index.html#event-driven-paradigm-doesn-t-make-any-sense-for-rtl">Event driven paradigm doesn’t make any sense for RTL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Foreword/index.html#recent-revisions-of-vhdl-and-verilog-aren-t-usable">Recent revisions of VHDL and Verilog aren’t usable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Foreword/index.html#vhdl-records-verilog-struct-are-broken-systemverilog-is-good-on-this-if-you-can-use-it">VHDL records, Verilog struct are broken (SystemVerilog is good on this, if you can use it)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Foreword/index.html#vhdl-and-verilog-are-so-verbose">VHDL and Verilog are so verbose</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Foreword/index.html#meta-hardware-description-capabilities">Meta Hardware Description capabilities</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../About%20SpinalHDL/support.html">Support</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../About%20SpinalHDL/support.html#communication-channels">Communication channels</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../About%20SpinalHDL/support.html#commercial-support">Commercial support</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../About%20SpinalHDL/users.html">Users</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../About%20SpinalHDL/users.html#companies">Companies</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../About%20SpinalHDL/users.html#repositories">Repositories</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Introduction/index.html">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Introduction/SpinalHDL.html">About SpinalHDL</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Introduction/SpinalHDL.html#what-is-spinalhdl">What is SpinalHDL?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Introduction/SpinalHDL.html#what-spinalhdl-is-not">What SpinalHDL is not</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Introduction/SpinalHDL.html#the-spinal-development-flow">The Spinal development flow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Introduction/SpinalHDL.html#advantages-of-using-spinalhdl-over-vhdl-verilog">Advantages of using SpinalHDL over VHDL / Verilog</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../Introduction/A%20simple%20example.html">A simple example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Introduction/A%20simple%20example.html#component">Component</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Introduction/A%20simple%20example.html#ports">Ports</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Introduction/A%20simple%20example.html#internal-logic">Internal logic</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Introduction/Projects%20using%20SpinalHDL.html">Projects using SpinalHDL</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Introduction/Projects%20using%20SpinalHDL.html#repositories">Repositories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Introduction/Projects%20using%20SpinalHDL.html#companies">Companies</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Introduction/Getting%20in%20touch.html">Getting in touch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Introduction/License.html">License</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Introduction/Contributing.html">Contributing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Introduction/faq.html">FAQ</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Introduction/faq.html#what-is-the-overhead-of-spinalhdl-generated-rtl-compared-to-human-written-vhdl-verilog">What is the overhead of SpinalHDL generated RTL compared to human written VHDL/Verilog?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Introduction/faq.html#what-if-spinalhdl-becomes-unsupported-in-the-future">What if SpinalHDL becomes unsupported in the future?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Introduction/faq.html#does-spinalhdl-keep-comments-in-generated-vhdl-verilog">Does SpinalHDL keep comments in generated VHDL/verilog?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Introduction/faq.html#could-spinalhdl-scale-up-to-big-projects">Could SpinalHDL scale up to big projects?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Introduction/faq.html#how-spinalhdl-came-to-be">How SpinalHDL came to be</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Introduction/faq.html#why-develop-a-new-language-when-there-is-vhdl-verilog-systemverilog">Why develop a new language when there is VHDL/Verilog/SystemVerilog?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Introduction/faq.html#how-to-use-an-unreleased-version-of-spinalhdl-but-committed-on-git">How to use an unreleased version of SpinalHDL (but committed on git)?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Introduction/Other%20learning%20materials.html">Other learning materials</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Getting%20Started/index.html">Getting Started</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Getting%20Started/getting_started.html">Getting Started</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Getting%20Started/getting_started.html#requirements-things-to-download-to-get-started">Requirements / Things to download to get started</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Getting%20Started/getting_started.html#how-to-start-programming-with-spinalhdl">How to start programming with SpinalHDL</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Getting%20Started/getting_started.html#the-sbt-way">The SBT way</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../Getting%20Started/getting_started.html#the-ide-way-with-intellij-idea-and-its-scala-plugin">The IDE way, with IntelliJ IDEA and its Scala plugin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Getting%20Started/Install%20and%20setup.html">Install and setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Getting%20Started/Install%20and%20setup.html#mandatory-requirements">Mandatory requirements</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Getting%20Started/Install%20and%20setup.html#installing-sbt-in-an-internet-free-environment">Installing SBT in an internet-free environment</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../Getting%20Started/getting_started.html#a-very-simple-spinalhdl-example">A very simple SpinalHDL example</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Getting%20Started/getting_started.html#generated-code">Generated code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Getting%20Started/Install%20and%20setup.html#recommended-requirements">Recommended requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Getting%20Started/Install%20and%20setup.html#create-a-spinalhdl-project">Create a SpinalHDL project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Getting%20Started/Install%20and%20setup.html#the-directory-structure-of-a-project">The directory structure of a project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Getting%20Started/Install%20and%20setup.html#using-spinal-on-spinalhdl-code">Using Spinal on SpinalHDL code</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../Getting%20Started/getting_started.html#what-to-do-next">What to do next?</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../Getting%20Started/motivation.html">Motivation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Getting%20Started/presentation.html">Presentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Getting%20Started/SBT.html">Using Spinal from CLI with SBT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Getting%20Started/VSCodium.html">Using Spinal from VSCodium</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Getting%20Started/IntelliJ.html">Using Spinal from IntelliJ IDEA</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Getting%20Started/Scala%20Guide/index.html">Scala Guide</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Getting%20Started/Scala%20Guide/basics.html">Basics</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../Getting%20Started/Scala%20Guide/basics.html#types">Types</a></li>
@@ -211,6 +235,7 @@
 <li class="toctree-l4"><a class="reference internal" href="bool.html#comparison">Comparison</a></li>
 <li class="toctree-l4"><a class="reference internal" href="bool.html#type-cast">Type cast</a></li>
 <li class="toctree-l4"><a class="reference internal" href="bool.html#misc">Misc</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bool.html#maskedboolean">MaskedBoolean</a></li>
 </ul>
 </li>
 </ul>
@@ -224,6 +249,7 @@
 <li class="toctree-l4"><a class="reference internal" href="bits.html#type-cast">Type cast</a></li>
 <li class="toctree-l4"><a class="reference internal" href="bits.html#bit-extraction">Bit extraction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="bits.html#misc">Misc</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bits.html#maskedliteral">MaskedLiteral</a></li>
 </ul>
 </li>
 </ul>
@@ -257,6 +283,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="enum.html#operators">Operators</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="enum.html#comparison">Comparison</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum.html#types">Types</a></li>
 <li class="toctree-l4"><a class="reference internal" href="enum.html#type-cast">Type cast</a></li>
 </ul>
 </li>
@@ -264,7 +291,10 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="bundle.html">Bundle</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="bundle.html#description">Description</a></li>
-<li class="toctree-l3"><a class="reference internal" href="bundle.html#declaration">Declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bundle.html#declaration">Declaration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bundle.html#conditional-signals">Conditional signals</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="bundle.html#operators">Operators</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="bundle.html#comparison">Comparison</a></li>
 <li class="toctree-l4"><a class="reference internal" href="bundle.html#type-cast">Type cast</a></li>
@@ -288,6 +318,7 @@
 <li class="toctree-l4"><a class="reference internal" href="Vec.html#comparison">Comparison</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Vec.html#type-cast">Type cast</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Vec.html#misc">Misc</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Vec.html#lib-helper-functions">Lib helper functions</a></li>
 </ul>
 </li>
 </ul>
@@ -336,6 +367,16 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="AFix.html">AFix</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="AFix.html#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AFix.html#declaration">Declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AFix.html#mathematical-operations">Mathematical Operations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AFix.html#inequality-operations">Inequality Operations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AFix.html#bitshifting">Bitshifting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AFix.html#saturation-and-rounding">Saturation and Rounding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AFix.html#assignment">Assignment</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#introduction">Introduction</a></li>
 </ul>
 </li>
@@ -364,12 +405,14 @@
 <li class="toctree-l4"><a class="reference internal" href="../Structuring/clock_domain.html#configuration">Configuration</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Structuring/clock_domain.html#internal-clock">Internal clock</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Structuring/clock_domain.html#external-clock">External clock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Structuring/clock_domain.html#signal-priorities-in-hdl-generation">Signal priorities in HDL generation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Structuring/clock_domain.html#context">Context</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../Structuring/clock_domain.html#clock-domain-crossing">Clock domain crossing</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Structuring/clock_domain.html#special-clocking-areas">Special clocking Areas</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../Structuring/clock_domain.html#slow-area">Slow Area</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Structuring/clock_domain.html#bootreset">BootReset</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Structuring/clock_domain.html#resetarea">ResetArea</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Structuring/clock_domain.html#clockenablearea">ClockEnableArea</a></li>
 </ul>
@@ -406,6 +449,12 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../Structuring/parametrization.html">Parametrization</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Structuring/parametrization.html#introduction">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Structuring/parametrization.html#elaboration-time-parameters">Elaboration time parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Structuring/parametrization.html#optional-hardware">Optional hardware</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Semantic/index.html">Semantic</a><ul>
@@ -417,11 +466,15 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Semantic/when_switch.html">When/Switch/Mux</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Semantic/when_switch.html#when">When</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Semantic/when_switch.html#switch">Switch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Semantic/when_switch.html#switch">Switch</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Semantic/when_switch.html#example">Example</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Semantic/when_switch.html#additional-options">Additional options</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../Semantic/when_switch.html#local-declaration">Local declaration</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Semantic/when_switch.html#mux">Mux</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Semantic/when_switch.html#bitwise-selection">Bitwise selection</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Semantic/when_switch.html#example">Example</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Semantic/when_switch.html#id1">Example</a></li>
 </ul>
 </li>
 </ul>
@@ -441,10 +494,13 @@
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/registers.html#instantiation">Instantiation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/registers.html#reset-value">Reset value</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/registers.html#initialization-value-for-simulation-purposes">Initialization value for simulation purposes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/registers.html#register-vectors">Register vectors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/registers.html#transforming-a-wire-into-a-register">Transforming a wire into a register</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Sequential%20logic/memory.html">RAM/ROM</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/memory.html#syntax">Syntax</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/memory.html#synchronous-enable-quirk">Synchronous enable quirk</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/memory.html#read-under-write-policy">Read-under-write policy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/memory.html#mixed-width-ram">Mixed-width ram</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/memory.html#automatic-blackboxing">Automatic blackboxing</a><ul>
@@ -491,6 +547,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../Design%20errors/latch_detected.html">Latch detected</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Design%20errors/latch_detected.html#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Design%20errors/latch_detected.html#example">Example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Design%20errors/latch_detected.html#due-to-mux">Due to mux</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Design%20errors/no_driver_on.html">No driver on</a><ul>
@@ -518,7 +575,8 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Design%20errors/spinal_cant_clone.html">Spinal can’t clone class</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Design%20errors/spinal_cant_clone.html#introduction">Introduction</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Design%20errors/spinal_cant_clone.html#example">Example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Design%20errors/spinal_cant_clone.html#example-1">Example 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Design%20errors/spinal_cant_clone.html#example-2">Example 2</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Design%20errors/unassigned_register.html">Unassigned register</a><ul>
@@ -557,16 +615,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../Other%20language%20features/stub.html">Stub</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Other%20language%20features/assertion.html">Assertions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Other%20language%20features/report.html">Report</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Other%20language%20features/formal.html">Formal</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/formal.html#general">General</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/formal.html#clocked-assertion-without-reset">Clocked assertion without reset</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/formal.html#specifying-the-initial-value-of-a-signal">Specifying the initial value of a signal</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/formal.html#specifying-a-initial-assumption">Specifying a initial assumption</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/formal.html#specifying-assertion-in-the-reset-scope">Specifying assertion in the reset scope</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/formal.html#supported-features">Supported features</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/formal.html#limitations">Limitations</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="../Other%20language%20features/scope_property.html">ScopeProperty</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Other%20language%20features/analog_inout.html">Analog and inout</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/analog_inout.html#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/analog_inout.html#analog">Analog</a></li>
@@ -616,17 +665,22 @@
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/stream.html#streamfifo">StreamFifo</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/stream.html#streamfifocc">StreamFifoCC</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/stream.html#streamccbytoggle">StreamCCByToggle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/stream.html#streamwidthadapter">StreamWidthAdapter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/stream.html#streamarbiter">StreamArbiter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/stream.html#streamjoin">StreamJoin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/stream.html#streamfork">StreamFork</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/stream.html#streammux">StreamMux</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/stream.html#streamdemux">StreamDemux</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/stream.html#streamdispatchersequencial">StreamDispatcherSequencial</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/stream.html#simulation-support">Simulation support</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Libraries/flow.html">Flow</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/flow.html#specification">Specification</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/flow.html#functions">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/flow.html#code-example">Code example</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Libraries/fragment.html">Fragment</a><ul>
@@ -636,11 +690,17 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Libraries/fsm.html">State machine</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/fsm.html#introduction">Introduction</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Libraries/fsm.html#statemachine">StateMachine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/fsm.html#statemachine">StateMachine</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/fsm.html#entry-point">Entry point</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/fsm.html#transitions">Transitions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/fsm.html#state-encoding">State encoding</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/fsm.html#states">States</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/fsm.html#statedelay">StateDelay</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/fsm.html#statefsm">StateFsm</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/fsm.html#stateparallelfsm">StateParallelFsm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/fsm.html#notes-about-the-entry-state">Notes about the entry state</a></li>
 </ul>
 </li>
 </ul>
@@ -672,6 +732,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#automatic-allocation">Automatic allocation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#access-types">28 Access Types</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#automatic-documentation-generation">Automatic documentation generation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#example">Example</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#interrupt-factory">Interrupt Factory</a></li>
 </ul>
 </li>
@@ -679,10 +740,10 @@
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#ip-level-interrupt-factory">IP level interrupt Factory</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#sys-level-interrupt-merge">SYS level interrupt merge</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#spinal-factory">Spinal Factory</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#example">Example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#id1">Example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#developers-area">Developers Area</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../Libraries/regIf.html#developers-area">Developers Area</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Libraries/Bus/index.html">Bus</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/Bus/amba3/ahblite3.html">AHB-Lite3</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/amba3/ahblite3.html#configuration-and-instanciation">Configuration and instanciation</a></li>
@@ -714,6 +775,19 @@
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/uart.html#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/uart.html#bus-definition">Bus definition</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/uart.html#uartctrl">UartCtrl</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/Com/usb_device.html">USB device</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/usb_device.html#introduction">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/usb_device.html#architecture">Architecture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/usb_device.html#registers">Registers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/usb_device.html#descriptors">Descriptors</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/usb_device.html#usage">Usage</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/Com/usb_ohci.html">USB OHCI</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/usb_ohci.html#introduction">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/usb_ohci.html#usage">Usage</a></li>
 </ul>
 </li>
 </ul>
@@ -781,6 +855,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../Simulation/install/index.html#backend-dependent-installation-instructions">Backend-dependent installation instructions</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../Simulation/install/GHDL.html">Setup and installation of GHDL</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Simulation/install/Icarus%20Verilog.html">Setup and installation of Icarus Verilog</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Simulation/install/VCS.html">VCS Simulation Configuration</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Simulation/install/Verilator.html">Setup and installation of Verilator</a></li>
 </ul>
 </li>
@@ -826,7 +901,37 @@
 <li class="toctree-l2"><a class="reference internal" href="../Simulation/index.html#introduction">Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Simulation/index.html#how-spinalhdl-simulates-the-hardware-with-verilator-backend">How SpinalHDL simulates the hardware with Verilator backend</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Simulation/index.html#how-spinalhdl-simulates-the-hardware-with-ghdl-icarus-verilog-backend">How SpinalHDL simulates the hardware with GHDL/Icarus Verilog backend</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Simulation/index.html#how-spinalhdl-simulates-the-hardware-with-synopsys-vcs-backend">How SpinalHDL simulates the hardware with Synopsys VCS backend</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Simulation/index.html#performance">Performance</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Formal%20verification/index.html">Formal verification</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Formal%20verification/index.html#general">General</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Formal%20verification/index.html#formal-backend">Formal backend</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Formal%20verification/index.html#installing-requirements">Installing requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Formal%20verification/index.html#example">Example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#external-assertions">External assertions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#internal-assertions">Internal assertions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#external-stimulus">External stimulus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#more-assertions-past">More assertions / past</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#assuming-memory-content">Assuming memory content</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Formal%20verification/index.html#utilities-and-primitives">Utilities and primitives</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#assertions-clock-reset">Assertions / clock / reset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#specifying-the-initial-value-of-a-signal">Specifying the initial value of a signal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#specifying-a-initial-assumption">Specifying a initial assumption</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#memory-content-mem">Memory content (Mem)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#specifying-assertion-in-the-reset-scope">Specifying assertion in the reset scope</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#formal-primitives">Formal primitives</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Formal%20verification/index.html#limitations">Limitations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Formal%20verification/index.html#naming-polices">Naming polices</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#for-component">For Component</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#for-interfaces-implement-imasterslave">For interfaces implement IMasterSlave</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Examples/index.html">Examples</a><ul>
@@ -970,6 +1075,14 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../Developers%20area/mill%20support.html">Build through Mill</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Developers%20area/mill%20support.html#complie-the-library">Complie the library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Developers%20area/mill%20support.html#run-all-test-suites">Run all test suites</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Developers%20area/mill%20support.html#run-a-specified-test-suite">Run a specified test suite</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Developers%20area/mill%20support.html#run-a-specified-app">Run a specified App</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Developers%20area/mill%20support.html#publish-locally">Publish locally</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../Developers%20area/spinalhdl_datamodel.html">SpinalHDL internal datamodel</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/spinalhdl_datamodel.html#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/spinalhdl_datamodel.html#general-structure">General structure</a></li>
@@ -977,6 +1090,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/spinalhdl_datamodel.html#compilation-phases">Compilation Phases</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/spinalhdl_datamodel.html#modifying-a-netlist-as-a-user-without-plugins">Modifying a netlist as a user without plugins</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/spinalhdl_datamodel.html#user-space-netlist-analysis">User space netlist analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Developers%20area/spinalhdl_datamodel.html#enumerating-every-clockdomain-used">Enumerating every ClockDomain used</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Developers%20area/types.html">Types</a><ul>
@@ -1082,16 +1196,16 @@
 <p>SpinalHDL fixed-point support is only partially used/tested, if you find any bugs with it, or you think that some functionality is missing, please create a <a class="reference external" href="https://github.com/SpinalHDL/SpinalHDL/issues">Github issue</a>. Also, please do not use undocumented features in your code.</p>
 </div>
 <div class="section" id="ufix-sfix">
-<span id="fixed"></span><h1>UFix/SFix<a class="headerlink" href="#ufix-sfix" title="Permalink to this headline">¶</a></h1>
+<span id="fixed"></span><h1>UFix/SFix<a class="headerlink" href="#ufix-sfix" title="Permalink to this heading">¶</a></h1>
 <div class="section" id="description">
-<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this heading">¶</a></h2>
 <p>The <code class="docutils literal notranslate"><span class="pre">UFix</span></code> and <code class="docutils literal notranslate"><span class="pre">SFix</span></code> types correspond to a vector of bits that can be used for fixed-point arithmetic.</p>
 </div>
 <div class="section" id="declaration">
-<h2>Declaration<a class="headerlink" href="#declaration" title="Permalink to this headline">¶</a></h2>
+<h2>Declaration<a class="headerlink" href="#declaration" title="Permalink to this heading">¶</a></h2>
 <p>The syntax to declare a fixed-point number is as follows:</p>
 <div class="section" id="unsigned-fixed-point">
-<h3>Unsigned Fixed-Point<a class="headerlink" href="#unsigned-fixed-point" title="Permalink to this headline">¶</a></h3>
+<h3>Unsigned Fixed-Point<a class="headerlink" href="#unsigned-fixed-point" title="Permalink to this heading">¶</a></h3>
 <table class="colwidths-given docutils align-default">
 <colgroup>
 <col style="width: 30%" />
@@ -1125,7 +1239,7 @@
 </table>
 </div>
 <div class="section" id="signed-fixed-point">
-<h3>Signed Fixed-Point<a class="headerlink" href="#signed-fixed-point" title="Permalink to this headline">¶</a></h3>
+<h3>Signed Fixed-Point<a class="headerlink" href="#signed-fixed-point" title="Permalink to this heading">¶</a></h3>
 <table class="colwidths-given docutils align-default">
 <colgroup>
 <col style="width: 30%" />
@@ -1159,7 +1273,7 @@
 </table>
 </div>
 <div class="section" id="format">
-<h3>Format<a class="headerlink" href="#format" title="Permalink to this headline">¶</a></h3>
+<h3>Format<a class="headerlink" href="#format" title="Permalink to this heading">¶</a></h3>
 <p>The chosen format follows the usual way of defining fixed-point number format using Q notation. More information can be found on the <a class="reference external" href="https://en.wikipedia.org/wiki/Q_(number_format)">Wikipedia page about the Q number format</a>.</p>
 <p>For example Q8.2 will mean a fixed-point number of 8+2 bits, where 8 bits are used for the natural part and 2 bits for the fractional part.
 If the fixed-point number is signed, one more bit is used for the sign.</p>
@@ -1171,78 +1285,80 @@ A convenience wrapper exists for this type, in the form of the <code class="docu
 </div>
 </div>
 <div class="section" id="examples">
-<h3>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h3>
+<h3>Examples<a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h3>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="c1">// Unsigned Fixed-Point</span>
-<span class="kd">val</span> <span class="nc">UQ_8_2</span> <span class="o">=</span> <span class="nc">UFix</span><span class="p">(</span><span class="n">peak</span> <span class="o">=</span> <span class="mi">8</span> <span class="n">exp</span><span class="p">,</span> <span class="n">resolution</span> <span class="o">=</span> <span class="o">-</span><span class="mi">2</span> <span class="n">exp</span><span class="p">)</span> <span class="c1">// bit width = 8 - (-2) = 10 bits</span>
-<span class="kd">val</span> <span class="nc">UQ_8_2</span> <span class="o">=</span> <span class="nc">UFix</span><span class="p">(</span><span class="mi">8</span> <span class="n">exp</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span> <span class="n">exp</span><span class="p">)</span>
+<span class="kd">val</span><span class="w"> </span><span class="nc">UQ_8_2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">UFix</span><span class="p">(</span><span class="n">peak</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">8</span><span class="w"> </span><span class="n">exp</span><span class="p">,</span><span class="w"> </span><span class="n">resolution</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="mi">2</span><span class="w"> </span><span class="n">exp</span><span class="p">)</span><span class="w"> </span><span class="c1">// bit width = 8 - (-2) = 10 bits</span>
+<span class="kd">val</span><span class="w"> </span><span class="nc">UQ_8_2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">UFix</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">exp</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mi">2</span><span class="w"> </span><span class="n">exp</span><span class="p">)</span><span class="w"></span>
 
-<span class="kd">val</span> <span class="nc">UQ_8_2</span> <span class="o">=</span> <span class="nc">UFix</span><span class="p">(</span><span class="n">peak</span> <span class="o">=</span> <span class="mi">8</span> <span class="n">exp</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="mi">10</span> <span class="n">bits</span><span class="p">)</span>
-<span class="kd">val</span> <span class="nc">UQ_8_2</span> <span class="o">=</span> <span class="nc">UFix</span><span class="p">(</span><span class="mi">8</span> <span class="n">exp</span><span class="p">,</span> <span class="mi">10</span> <span class="n">bits</span><span class="p">)</span>
+<span class="kd">val</span><span class="w"> </span><span class="nc">UQ_8_2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">UFix</span><span class="p">(</span><span class="n">peak</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">8</span><span class="w"> </span><span class="n">exp</span><span class="p">,</span><span class="w"> </span><span class="n">width</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="nc">UQ_8_2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">UFix</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">exp</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span><span class="w"></span>
 
 <span class="c1">// Signed Fixed-Point</span>
-<span class="kd">val</span> <span class="nc">Q_8_2</span> <span class="o">=</span> <span class="nc">SFix</span><span class="p">(</span><span class="n">peak</span> <span class="o">=</span> <span class="mi">8</span> <span class="n">exp</span><span class="p">,</span> <span class="n">resolution</span> <span class="o">=</span> <span class="o">-</span><span class="mi">2</span> <span class="n">exp</span><span class="p">)</span> <span class="c1">// bit width = 8 - (-2) + 1 = 11 bits</span>
-<span class="kd">val</span> <span class="nc">Q_8_2</span> <span class="o">=</span> <span class="nc">SFix</span><span class="p">(</span><span class="mi">8</span> <span class="n">exp</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span> <span class="n">exp</span><span class="p">)</span>
+<span class="kd">val</span><span class="w"> </span><span class="nc">Q_8_2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">SFix</span><span class="p">(</span><span class="n">peak</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">8</span><span class="w"> </span><span class="n">exp</span><span class="p">,</span><span class="w"> </span><span class="n">resolution</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="mi">2</span><span class="w"> </span><span class="n">exp</span><span class="p">)</span><span class="w"> </span><span class="c1">// bit width = 8 - (-2) + 1 = 11 bits</span>
+<span class="kd">val</span><span class="w"> </span><span class="nc">Q_8_2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">SFix</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">exp</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mi">2</span><span class="w"> </span><span class="n">exp</span><span class="p">)</span><span class="w"></span>
 
-<span class="kd">val</span> <span class="nc">Q_8_2</span> <span class="o">=</span> <span class="nc">SFix</span><span class="p">(</span><span class="n">peak</span> <span class="o">=</span> <span class="mi">8</span> <span class="n">exp</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="mi">11</span> <span class="n">bits</span><span class="p">)</span>
-<span class="kd">val</span> <span class="nc">Q_8_2</span> <span class="o">=</span> <span class="nc">SFix</span><span class="p">(</span><span class="mi">8</span> <span class="n">exp</span><span class="p">,</span> <span class="mi">11</span> <span class="n">bits</span><span class="p">)</span>
+<span class="kd">val</span><span class="w"> </span><span class="nc">Q_8_2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">SFix</span><span class="p">(</span><span class="n">peak</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">8</span><span class="w"> </span><span class="n">exp</span><span class="p">,</span><span class="w"> </span><span class="n">width</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">11</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="nc">Q_8_2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">SFix</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">exp</span><span class="p">,</span><span class="w"> </span><span class="mi">11</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="section" id="assignments">
-<h2>Assignments<a class="headerlink" href="#assignments" title="Permalink to this headline">¶</a></h2>
+<h2>Assignments<a class="headerlink" href="#assignments" title="Permalink to this heading">¶</a></h2>
 <div class="section" id="valid-assignments">
-<h3>Valid Assignments<a class="headerlink" href="#valid-assignments" title="Permalink to this headline">¶</a></h3>
+<h3>Valid Assignments<a class="headerlink" href="#valid-assignments" title="Permalink to this heading">¶</a></h3>
 <p>An assignment to a fixed-point value is valid when there is no bit loss. Any bit loss will result in an error.</p>
-<p>If the source fixed-point value is too big, the <code class="docutils literal notranslate"><span class="pre">.truncated</span></code> function will allow you to resize the source number to match the destination size.</p>
+<p>If the source fixed-point value is too big, the <code class="docutils literal notranslate"><span class="pre">truncated</span></code> function will allow you to resize the source number to match the destination size.</p>
 <div class="section" id="example">
-<h4>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h4>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span> <span class="n">i16_m2</span> <span class="o">=</span> <span class="nc">SFix</span><span class="p">(</span><span class="mi">16</span> <span class="n">exp</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span> <span class="n">exp</span><span class="p">)</span>
-<span class="kd">val</span> <span class="n">i16_0</span>  <span class="o">=</span> <span class="nc">SFix</span><span class="p">(</span><span class="mi">16</span> <span class="n">exp</span><span class="p">,</span>  <span class="mi">0</span> <span class="n">exp</span><span class="p">)</span>
-<span class="kd">val</span> <span class="n">i8_m2</span>  <span class="o">=</span> <span class="nc">SFix</span><span class="p">(</span> <span class="mi">8</span> <span class="n">exp</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span> <span class="n">exp</span><span class="p">)</span>
-<span class="kd">val</span> <span class="n">o16_m2</span> <span class="o">=</span> <span class="nc">SFix</span><span class="p">(</span><span class="mi">16</span> <span class="n">exp</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span> <span class="n">exp</span><span class="p">)</span>
-<span class="kd">val</span> <span class="n">o16_m0</span> <span class="o">=</span> <span class="nc">SFix</span><span class="p">(</span><span class="mi">16</span> <span class="n">exp</span><span class="p">,</span>  <span class="mi">0</span> <span class="n">exp</span><span class="p">)</span>
-<span class="kd">val</span> <span class="n">o14_m2</span> <span class="o">=</span> <span class="nc">SFix</span><span class="p">(</span><span class="mi">14</span> <span class="n">exp</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span> <span class="n">exp</span><span class="p">)</span>
+<h4>Example<a class="headerlink" href="#example" title="Permalink to this heading">¶</a></h4>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">i16_m2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">SFix</span><span class="p">(</span><span class="mi">16</span><span class="w"> </span><span class="n">exp</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mi">2</span><span class="w"> </span><span class="n">exp</span><span class="p">)</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">i16_0</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="nc">SFix</span><span class="p">(</span><span class="mi">16</span><span class="w"> </span><span class="n">exp</span><span class="p">,</span><span class="w">  </span><span class="mi">0</span><span class="w"> </span><span class="n">exp</span><span class="p">)</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">i8_m2</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="nc">SFix</span><span class="p">(</span><span class="w"> </span><span class="mi">8</span><span class="w"> </span><span class="n">exp</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mi">2</span><span class="w"> </span><span class="n">exp</span><span class="p">)</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">o16_m2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">SFix</span><span class="p">(</span><span class="mi">16</span><span class="w"> </span><span class="n">exp</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mi">2</span><span class="w"> </span><span class="n">exp</span><span class="p">)</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">o16_m0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">SFix</span><span class="p">(</span><span class="mi">16</span><span class="w"> </span><span class="n">exp</span><span class="p">,</span><span class="w">  </span><span class="mi">0</span><span class="w"> </span><span class="n">exp</span><span class="p">)</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">o14_m2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">SFix</span><span class="p">(</span><span class="mi">14</span><span class="w"> </span><span class="n">exp</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mi">2</span><span class="w"> </span><span class="n">exp</span><span class="p">)</span><span class="w"></span>
 
-<span class="n">o16_m2</span> <span class="o">:=</span> <span class="n">i16_m2</span>            <span class="c1">// OK</span>
-<span class="n">o16_m0</span> <span class="o">:=</span> <span class="n">i16_m2</span>            <span class="c1">// Not OK, Bit loss</span>
-<span class="n">o14_m2</span> <span class="o">:=</span> <span class="n">i16_m2</span>            <span class="c1">// Not OK, Bit loss</span>
-<span class="n">o16_m0</span> <span class="o">:=</span> <span class="n">i16_m2</span><span class="p">.</span><span class="n">truncated</span>  <span class="c1">// OK, as it is resized</span>
-<span class="n">o14_m2</span> <span class="o">:=</span> <span class="n">i16_m2</span><span class="p">.</span><span class="n">truncated</span>  <span class="c1">// OK, as it is resized</span>
+<span class="n">o16_m2</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">i16_m2</span><span class="w">            </span><span class="c1">// OK</span>
+<span class="n">o16_m0</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">i16_m2</span><span class="w">            </span><span class="c1">// Not OK, Bit loss</span>
+<span class="n">o14_m2</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">i16_m2</span><span class="w">            </span><span class="c1">// Not OK, Bit loss</span>
+<span class="n">o16_m0</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">i16_m2</span><span class="p">.</span><span class="n">truncated</span><span class="w">  </span><span class="c1">// OK, as it is resized to match assignment target</span>
+<span class="n">o14_m2</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">i16_m2</span><span class="p">.</span><span class="n">truncated</span><span class="w">  </span><span class="c1">// OK, as it is resized to match assignment target</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">o18_m2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i16_m2</span><span class="p">.</span><span class="n">truncated</span><span class="p">(</span><span class="mi">18</span><span class="w"> </span><span class="n">exp</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mi">2</span><span class="w"> </span><span class="n">exp</span><span class="p">)</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">o18_22b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i16_m2</span><span class="p">.</span><span class="n">truncated</span><span class="p">(</span><span class="mi">18</span><span class="w"> </span><span class="n">exp</span><span class="p">,</span><span class="w"> </span><span class="mi">22</span><span class="w"> </span><span class="n">bit</span><span class="p">)</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="section" id="from-a-scala-constant">
-<h3>From a Scala constant<a class="headerlink" href="#from-a-scala-constant" title="Permalink to this headline">¶</a></h3>
+<h3>From a Scala constant<a class="headerlink" href="#from-a-scala-constant" title="Permalink to this heading">¶</a></h3>
 <p>Scala <code class="docutils literal notranslate"><span class="pre">BigInt</span></code> or <code class="docutils literal notranslate"><span class="pre">Double</span></code> types can be used as constants when assigning to <code class="docutils literal notranslate"><span class="pre">UFix</span></code> or <code class="docutils literal notranslate"><span class="pre">SFix</span></code> signals.</p>
 <div class="section" id="id1">
-<h4>Example<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span> <span class="n">i4_m2</span> <span class="o">=</span> <span class="nc">SFix</span><span class="p">(</span><span class="mi">4</span> <span class="n">exp</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span> <span class="n">exp</span><span class="p">)</span>
-<span class="n">i4_m2</span> <span class="o">:=</span> <span class="mf">1.25</span>    <span class="c1">// Will load 5 in i4_m2.raw</span>
-<span class="n">i4_m2</span> <span class="o">:=</span> <span class="mi">4</span>       <span class="c1">// Will load 16 in i4_m2.raw</span>
+<h4>Example<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h4>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">i4_m2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">SFix</span><span class="p">(</span><span class="mi">4</span><span class="w"> </span><span class="n">exp</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mi">2</span><span class="w"> </span><span class="n">exp</span><span class="p">)</span><span class="w"></span>
+<span class="n">i4_m2</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="mf">1.25</span><span class="w">    </span><span class="c1">// Will load 5 in i4_m2.raw</span>
+<span class="n">i4_m2</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="mi">4</span><span class="w">       </span><span class="c1">// Will load 16 in i4_m2.raw</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
 <div class="section" id="raw-value">
-<h2>Raw value<a class="headerlink" href="#raw-value" title="Permalink to this headline">¶</a></h2>
+<h2>Raw value<a class="headerlink" href="#raw-value" title="Permalink to this heading">¶</a></h2>
 <p>The integer representation of the fixed-point number can be read or written by using the <code class="docutils literal notranslate"><span class="pre">raw</span></code> property.</p>
 <div class="section" id="id2">
-<h3>Example<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span> <span class="nc">UQ_8_2</span> <span class="o">=</span> <span class="nc">UFix</span><span class="p">(</span><span class="mi">8</span> <span class="n">exp</span><span class="p">,</span> <span class="mi">10</span> <span class="n">bits</span><span class="p">)</span>
-<span class="nc">UQ_8_2</span><span class="p">.</span><span class="n">raw</span> <span class="o">:=</span> <span class="mi">4</span>        <span class="c1">// Assign the value corresponding to 1.0</span>
-<span class="nc">UQ_8_2</span><span class="p">.</span><span class="n">raw</span> <span class="o">:=</span> <span class="nc">U</span><span class="p">(</span><span class="mi">17</span><span class="p">)</span>    <span class="c1">// Assign the value corresponding to 4.25</span>
+<h3>Example<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h3>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="nc">UQ_8_2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">UFix</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">exp</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span><span class="w"></span>
+<span class="nc">UQ_8_2</span><span class="p">.</span><span class="n">raw</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="mi">4</span><span class="w">        </span><span class="c1">// Assign the value corresponding to 1.0</span>
+<span class="nc">UQ_8_2</span><span class="p">.</span><span class="n">raw</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nc">U</span><span class="p">(</span><span class="mi">17</span><span class="p">)</span><span class="w">    </span><span class="c1">// Assign the value corresponding to 4.25</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="section" id="operators">
-<h2>Operators<a class="headerlink" href="#operators" title="Permalink to this headline">¶</a></h2>
+<h2>Operators<a class="headerlink" href="#operators" title="Permalink to this heading">¶</a></h2>
 <p>The following operators are available for the <code class="docutils literal notranslate"><span class="pre">UFix</span></code> type:</p>
 <div class="section" id="arithmetic">
-<h3>Arithmetic<a class="headerlink" href="#arithmetic" title="Permalink to this headline">¶</a></h3>
+<h3>Arithmetic<a class="headerlink" href="#arithmetic" title="Permalink to this heading">¶</a></h3>
 <table class="colwidths-given docutils align-default">
 <colgroup>
 <col style="width: 5%" />
@@ -1297,7 +1413,7 @@ A convenience wrapper exists for this type, in the form of the <code class="docu
 </table>
 </div>
 <div class="section" id="comparison">
-<h3>Comparison<a class="headerlink" href="#comparison" title="Permalink to this headline">¶</a></h3>
+<h3>Comparison<a class="headerlink" href="#comparison" title="Permalink to this heading">¶</a></h3>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 33%" />
@@ -1339,7 +1455,7 @@ A convenience wrapper exists for this type, in the form of the <code class="docu
 </table>
 </div>
 <div class="section" id="type-cast">
-<h3>Type cast<a class="headerlink" href="#type-cast" title="Permalink to this headline">¶</a></h3>
+<h3>Type cast<a class="headerlink" href="#type-cast" title="Permalink to this heading">¶</a></h3>
 <table class="colwidths-given docutils align-default">
 <colgroup>
 <col style="width: 17%" />
@@ -1367,7 +1483,7 @@ A convenience wrapper exists for this type, in the form of the <code class="docu
 </tr>
 <tr class="row-odd"><td><p>x.asBools</p></td>
 <td><p>Cast into a array of Bool</p></td>
-<td><p>Vec(Bool,width(x))</p></td>
+<td><p>Vec(Bool(),width(x))</p></td>
 </tr>
 <tr class="row-even"><td><p>x.toUInt</p></td>
 <td><p>Return the corresponding UInt (with truncation)</p></td>
@@ -1389,7 +1505,7 @@ A convenience wrapper exists for this type, in the form of the <code class="docu
 </table>
 </div>
 <div class="section" id="misc">
-<h3>Misc<a class="headerlink" href="#misc" title="Permalink to this headline">¶</a></h3>
+<h3>Misc<a class="headerlink" href="#misc" title="Permalink to this heading">¶</a></h3>
 <table class="colwidths-given docutils align-default">
 <colgroup>
 <col style="width: 22%" />
@@ -1441,7 +1557,7 @@ A convenience wrapper exists for this type, in the form of the <code class="docu
 
   <div role="contentinfo">
     <p>
-        &#169; Copyright 2018, SpinalHDL.
+        &#169; Copyright 2022, SpinalHDL.
 
     </p>
   </div>
@@ -1477,6 +1593,11 @@ A convenience wrapper exists for this type, in the form of the <code class="docu
       <dt>Branches</dt>
       <dd><a href="Fix.html">dev</a></dd>
       <dd><a href="../../../master/SpinalHDL/Data types/Fix.html">master</a></dd>
+    </dl>
+    <dl>
+      <dt>Downloads</dt>
+      <dd><a href="../../artefacts/SpinalHDL_docs-dev.">HTML</a></dd>
+      <dd><a href="../../artefacts/SpinalHDL_docs-dev.pdf">PDF</a></dd>
     </dl>
   </div>
 </div>
